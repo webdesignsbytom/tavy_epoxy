@@ -1,10 +1,15 @@
 import './app.css';
-import Header from './src/header/Header';
+import CTABar from './cta/CTABar';
+import Header from './header/Header';
+import Hero from './hero/Hero';
+
 
 function App() {
   return (
     <>
-      <Header />
+  <Header />
+  <Hero />
+  <CTABar />
     </>
   );
 }

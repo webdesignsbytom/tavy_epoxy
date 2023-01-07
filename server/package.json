@@ -1,0 +1,11 @@
+{
+  "name": "tavyepoxy",
+  "version": "1.0.0",
+  "description": "server to save customer data and design options",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tom Brockington",
+  "license": "ISC"
+}

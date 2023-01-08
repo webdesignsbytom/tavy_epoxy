@@ -5,12 +5,37 @@
   padding: 0 4rem;
 }
 
+.text__container {
+  font-size: 1.4rem;
+  line-height: 1.1;
+  padding-top: 0.4rem;
+}
+
 .first__article__container {
-  /* background-color: beige; */
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  place-content: center;
+}
+
+.btn__container {
+  display: grid;
+  place-content: center;
+  padding: 0.6rem 0;
+}
+.design__button {
+  width: 250px;
+  padding: 0.8rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  background-color: white;
 }
 
 .second__article__container {
-  /* background-color: beige; */
+  font-size: 1.4rem;
+  line-height: 1.1;
+  padding-top: 0.4rem;
 }
 
 .image__slider__container {
@@ -22,6 +47,10 @@
   height: 100%;
 }
 
+.span__text {
+  display: flex;
+  text-align: center;
+}
 
 .selector__container {
 }

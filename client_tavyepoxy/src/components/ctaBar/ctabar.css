@@ -3,7 +3,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 1.5rem;
+    padding: 2rem 0rem;
 }
 
 .button__container {

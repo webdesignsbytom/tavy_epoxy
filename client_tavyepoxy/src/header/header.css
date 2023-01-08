@@ -1,8 +1,0 @@
-header {
-    display: grid;
-    text-align: center;
-    min-height: 10rem;
-    padding-top: 2rem;
-
-    background-color: var(--header-background-color);
-}

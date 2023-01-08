@@ -1,15 +1,17 @@
 import './app.css';
-import CTABar from './cta/CTABar';
-import Header from './header/Header';
-import Hero from './hero/Hero';
-
+import { Routes, Route, Navigate } from 'react-router-dom';
+import Contact from './pages/contact/Contact';
+import Gallery from './pages/gallery/Gallery';
+import Home from './pages/home/Home';
 
 function App() {
   return (
     <>
-  <Header />
-  <Hero />
-  <CTABar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/gallery' element={<Gallery />} />
+      </Routes>
     </>
   );
 }

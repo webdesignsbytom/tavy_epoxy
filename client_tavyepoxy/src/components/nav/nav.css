@@ -1,0 +1,25 @@
+nav {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding: 1rem;
+  background-color: rgba(211, 211, 211, 0.463);
+  width: 100%;
+}
+
+.logo__container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.logo__container img {
+  width: 5rem;
+}
+
+.menu__container {
+  display: grid;
+  justify-self: end;
+  align-items: center;
+  gap: 1rem;
+  grid-auto-flow: column;
+}

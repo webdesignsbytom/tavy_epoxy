@@ -1,5 +1,6 @@
 import React from 'react';
 import './ctabar.css';
+import MarbleBtn from '../../assets/images/marble_background2.jpg'
 
 function CTABar() {
   return (

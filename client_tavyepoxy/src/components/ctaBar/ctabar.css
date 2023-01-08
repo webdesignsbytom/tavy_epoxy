@@ -3,7 +3,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 2rem 0rem;
+    padding: 2.5rem 0rem;
 }
 
 .button__container {
@@ -19,12 +19,15 @@
     font-weight: bold;
     color: white;
 }
+
+.cta__button:hover {
+    background-image: url('../../assets/images/marble_background2.jpg');
+    color: black;
+}
 .enquire__button {
     background-color: white;
     color: black;
 }
-
 .gallery__button {
     background-color: black;;
-
 }

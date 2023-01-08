@@ -1,8 +1,7 @@
 .hero__container {
   width: 100%;
-  min-height: 26rem;
+  min-height: 28rem;
   background-image: url('../../assets/images/black_marble.jpg');
-  margin-bottom: 2rem;
   display: grid;
   place-content: center;
 }

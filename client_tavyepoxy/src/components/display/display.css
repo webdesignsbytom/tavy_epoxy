@@ -1,0 +1,27 @@
+.display__container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 4rem;
+}
+
+.first__article__container {
+  /* background-color: beige; */
+}
+
+.second__article__container {
+  /* background-color: beige; */
+}
+
+.image__slider__container {
+  border: 5px solid black;
+}
+
+.image__container img {
+  width: 100%;
+  height: 100%;
+}
+
+
+.selector__container {
+}

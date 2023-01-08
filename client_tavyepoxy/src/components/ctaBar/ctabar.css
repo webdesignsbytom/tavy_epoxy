@@ -1,0 +1,30 @@
+.cta__container {
+    /* background-color: aqua; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.5rem;
+}
+
+.button__container {
+    display: grid;
+    place-content: center;
+}
+
+.cta__button {
+    width: 250px;
+    padding: 0.8rem;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+.enquire__button {
+    background-color: white;
+    color: black;
+}
+
+.gallery__button {
+    background-color: black;;
+
+}

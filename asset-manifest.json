@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/tavy_epoxy/static/css/main.14fc98ac.css",
+    "main.js": "/tavy_epoxy/static/js/main.c36a0a96.js",
+    "static/media/4x.png": "/tavy_epoxy/static/media/4x.51c850626ddc9cc50e5c.png",
+    "static/media/Et3.png": "/tavy_epoxy/static/media/Et3.9e96aa73f72acd465106.png",
+    "static/media/red_table.png": "/tavy_epoxy/static/media/red_table.5f2efe50485ff1c4eac3.png",
+    "static/media/orange_cropped.png": "/tavy_epoxy/static/media/orange_cropped.48e378f49246c5c33432.png",
+    "static/media/wooden_inlays.jpg": "/tavy_epoxy/static/media/wooden_inlays.f84b929eb3c4ae809b14.jpg",
+    "static/media/northern_lights_crop.png": "/tavy_epoxy/static/media/northern_lights_crop.1c3569e73d253ab16769.png",
+    "static/media/ex_tiles.jpg": "/tavy_epoxy/static/media/ex_tiles.2e6b999093d20c2a5609.jpg",
+    "static/media/coffee_table.jpg": "/tavy_epoxy/static/media/coffee_table.fe370b04a51214de67ec.jpg",
+    "static/media/table_close_up.png": "/tavy_epoxy/static/media/table_close_up.3071e5f995fc4590ef6d.png",
+    "static/media/art_piece.png": "/tavy_epoxy/static/media/art_piece.497def4686bb468dd42a.png",
+    "static/media/et6.png": "/tavy_epoxy/static/media/et6.61877329a589a7b4c5c9.png",
+    "static/media/black_marble.jpg": "/tavy_epoxy/static/media/black_marble.d2eb9d4fc2a5543b64c9.jpg",
+    "static/media/logo1.jpg": "/tavy_epoxy/static/media/logo1.8d6f29674dd7857bf530.jpg",
+    "static/media/leg_options.jpg": "/tavy_epoxy/static/media/leg_options.f4aa9f5d5798b937e6fd.jpg",
+    "static/media/marble_background2.jpg": "/tavy_epoxy/static/media/marble_background2.f78bb75839e7bd95dcc0.jpg",
+    "index.html": "/tavy_epoxy/index.html",
+    "main.14fc98ac.css.map": "/tavy_epoxy/static/css/main.14fc98ac.css.map",
+    "main.c36a0a96.js.map": "/tavy_epoxy/static/js/main.c36a0a96.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14fc98ac.css",
+    "static/js/main.c36a0a96.js"
+  ]
+}

@@ -21,13 +21,25 @@
 }
 
 .cta__button:hover {
-    background-image: url('../../assets/images/marble_background2.jpg');
     color: black;
+    background-image: url('../../assets/images/marble_background2.jpg');
 }
+
 .enquire__button {
     background-color: white;
     color: black;
 }
+
+.enquire__button:hover {
+    background-image: url('../../assets/images/marble_background2.jpg');
+}
+
 .gallery__button {
     background-color: black;;
 }
+
+.gallery__button:hover {
+    background-image: url('../../assets/images/black_marble.jpg');
+    color: white;
+}
+

@@ -16,11 +16,11 @@ function Gallery() {
     <>
       <Nav />
       <main className='gallery__container'>
-        <article className='gallery__item'>
+        <article className='gallery__item vertical'>
           <img src={RedTable} alt='Red table' />
         </article>
 
-        <article className='gallery__item'>
+        <article className='gallery__item horizontal'>
           <img src={NorthernLights} alt='Northern Lights' />
         </article>
 
@@ -32,7 +32,7 @@ function Gallery() {
           <img src={CounterTop} alt='Counter top and tiles' />
         </article>
 
-        <article className='gallery__item'>
+        <article className='gallery__item horizontal'>
           <img src={BlueTable1} alt='Blue table' />
         </article>
 

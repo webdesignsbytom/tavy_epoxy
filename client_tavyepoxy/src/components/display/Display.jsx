@@ -1,9 +1,6 @@
 import React from 'react';
 import './display.css';
-import CoffeeTable1 from '../../assets/images/coffee_table.jpg';
-import Orange1 from '../../assets/images/orange_cropped.png';
 import Legs from '../../assets/images/leg_options.jpg';
-import Examples from '../../assets/images/ex_tiles.jpg';
 import Ex41 from '../../assets/images/4x.png'
 import NorthernLights  from '../../assets/images/northern_lights_crop.png'
 
@@ -29,6 +26,8 @@ function Display() {
         </div>
         
       </section>
+
+      
     </>
   );
 }

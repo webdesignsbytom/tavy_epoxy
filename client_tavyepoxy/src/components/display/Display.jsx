@@ -1,33 +1,41 @@
 import React from 'react';
 import './display.css';
 import Legs from '../../assets/images/leg_options.jpg';
-import Ex41 from '../../assets/images/4x.png'
-import NorthernLights  from '../../assets/images/northern_lights_crop.png'
+import Ex41 from '../../assets/images/4x.png';
+import NorthernLights from '../../assets/images/northern_lights_crop.png';
 
 function Display() {
   return (
     <>
-      <section className='display__container'>
+      <main className='display__container'>
 
-        <div className="section1">
-          Tav-E-poxy create beautiful, unique and hand-made furniture. Designed to match any style of interior with a huge range of colours and materials available.
-        <p>Upload your own design or use our design tool to mock up something based on our available standards</p> 
-        <img src={Ex41} alt="Example tiles for epoxy" />
-        </div>
+        <section className='slider__container'>
 
-        <div className="section2">
-        <img src={NorthernLights} alt="Example tiles for epoxy" />
-          Epoxy or arcylic can be used to create thousands of designs with a glass smooth finish requiring little up keep, with strong resistance to damage and chipping</div>
+          <div className='current__image'>
+            <img src={NorthernLights} alt='norther lights display' />
+          </div>
 
-        <div className="section3">
-          Customise every aspect of the design, we have a huge option of readily available metal or wooden table legs. However if you find your own you prefer we can order anything in to make your dream a reality
-          <img src={Legs} alt="Example legs for tables" />
+          <div className='slider__control'>
+            <div className="slider__icon"></div>
+            <div className="slider__icon"></div>
+            <div className="slider__icon"></div>
+            <div className="slider__icon"></div>
+            <div className="slider__icon"></div>
+          </div>
+        </section>
 
-        </div>
-        
-      </section>
 
-      
+        <article className='main__article'>
+          <div className="top__content">Tav-e-poxy designs and builds unique furniture and beautiful artworks using resin styling.At affordable prices and available in matching sets, customizable options incling colours and timber.</div>
+          <div className="middle__content">
+            You can help make your home unique with a quality piece of hand-made furniture or wall art hanging. Epoxy has a beautiful glass smooth finish and you can see deep through its layers to get more complex artwork. These usually highly priced items are made with afforablitly in mind and you can have any style printed on MDF or recycled lumber.
+            A vast array of options can be selected from. If youre willing to pay for quality then we can source almost any timber you would prefer. Colour options include everything in the rainbow and almost most are availble in metallic shining particle powders that add a deeper visual effect. 
+          </div>
+          <div className="bottom__content">
+             Table styles can be made to reflect a look, feel or object. I have made units to match objects around peoples house that they enjoy and wanted to show off. The nature of how the resins are poured make the products so unique. Adding random style as you progress or following a brief pattern design, swirls or stoke sizes. We supply a selection of metal legs at a range of heights and styles to suit most needs. If you have a style in mind legs or supports can be supplied in practically any stlye you like. We are able to have specialty items welded and anodised. Each unit made looks show room ready but with a hand crafted feel and a completly unique style.
+          </div>
+        </article>
+      </main>
     </>
   );
 }

@@ -28,7 +28,7 @@ nav {
   gap: 4rem;
   padding-right: 1rem;
   text-transform: uppercase;
-  
+  font-family: 'Oswald', sans-serif;
 }
 
 .menu__container > * {

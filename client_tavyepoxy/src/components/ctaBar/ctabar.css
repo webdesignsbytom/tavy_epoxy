@@ -1,9 +1,9 @@
 .cta__container {
-    /* background-color: aqua; */
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 2.5rem 0rem;
+    padding-top: 8rem;
 }
 
 .button__container {
@@ -13,17 +13,16 @@
 
 .cta__button {
     width: 250px;
-    padding: 0.8rem;
-    border-radius: 12px;
-    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 22px;
+    font-size: 2rem;
     font-weight: bold;
     color: white;
     cursor: pointer;
 }
 
-.cta__button:hover {
+.cta__button {
     color: black;
-    
 }
 
 .enquire__button {
@@ -31,22 +30,18 @@
     color: black;
 }
 
+
 .enquire__button:hover {
     filter: brightness(120%) saturate(120%);
     background-image: url('../../assets/images/marble_background2.jpg');
 }
 
 .gallery__button {
-    background-color: black;;
+    background-color: black;
+    color: white;
 }
 
 .gallery__button:hover {
     background-image: url('../../assets/images/black_marble.jpg');
-    color: white;
     
 }
-
-a {
-    color: gold;
-}
-

@@ -15,14 +15,14 @@ console.log('window.screen.availWidth', window.screen.availWidth);
     <>
       <div className='hero__container'>
         <div className='hero__titles__container'>
-          <h1 className='main__title'>TAV-E-POXY</h1>
+          <h1 className='main__title'>TAV-E-<span className='second__font'>POXY</span></h1>
           <h2 className='subtitle'>
-            Unique epoxy furniture hand-made to order
+            Hand-made furniture with a unqiue and stunning epoxy finish
           </h2>
         </div>
         <div className='continue__btn__container' >
           <button className='continue__btn' id='continue__btn'>
-          <a href='#cta' onClick={() => setClickedContinue('#cta')} className={clickedContinue === '#cta' ? 'active' : ''}>CONTINUE</a>
+          <a href='#cta' onClick={() => setClickedContinue('#cta')} className={clickedContinue === '#cta' ? 'active' : ''}>Continue</a>
           </button>
         </div>
 

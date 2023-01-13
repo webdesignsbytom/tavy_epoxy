@@ -1,14 +1,69 @@
 .display__container {
-  border: 3px solid black;
-  margin: 0 8rem;
-  padding: 1rem;
-
+  /* background-color: yellow; */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: minmax(400px, .7fr) minmax(400px, 1fr);
+  grid-template-rows: repeat(auto-fit, minmax(600px, 1fr));
+  width: 100%;
+  padding: 0 3rem;
   gap: 1rem;
 }
 
-.display__container img {
-  border: 2px solid gold;
-  width: 60%;
+.slider__container {
+  background-image: url('../../assets/images/marble_background2.jpg');
+    border: 3px solid black;
+    width: 100%;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+
+}
+
+.current__image {
+  /* background-color: aquamarine; */
+  display: grid;
+  padding: 1rem;
+  align-items: center;
+  margin: 0.6rem;
+  border: 3px solid black;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.944);
+}
+
+.current__image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.slider__control {
+  text-align: center;
+  padding: 1rem;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.2rem;
+}
+
+.slider__icon {
+  width: 16px;
+  height: 16px;
+  background-color: black;
+  border-radius: 50%;
+}
+  
+.main__article {
+  margin: 0 3rem;
+  font-family: 'Oswald', sans-serif;
+
+  display: grid;
+}
+
+.top__content {
+  font-size: 2.2rem;
+}
+
+.middle__content, .bottom__content {
+  font-size: 1.2rem;
 }

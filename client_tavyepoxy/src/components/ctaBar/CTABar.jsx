@@ -6,10 +6,14 @@ function CTABar() {
   return (
     <section className='cta__container' id='cta'>
       <div className='button__container'>
-        <button className='enquire__button cta__button'>Enquire</button>
+        <Link to='/contact'>
+          <button className='enquire__button cta__button'>Enquire</button>
+        </Link>
       </div>
       <div className='button__container'>
-        <button className='gallery__button cta__button'>Gallery</button>
+        <Link to='/gallery'>
+          <button className='gallery__button cta__button'>Gallery</button>
+        </Link>
       </div>
     </section>
   );

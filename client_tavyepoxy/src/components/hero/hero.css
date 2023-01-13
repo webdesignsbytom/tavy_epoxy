@@ -18,11 +18,24 @@
 .main__title {
   font-weight: 700;
   font-family: 'Seymour One', sans-serif;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
+.second__font {
+  /* font-family: 'Permanent Marker', cursive; */
+  /* font-family: 'Hachi Maru Pop', cursive; */
+  /* font-family: 'Rubik Vinyl', cursive; */
+  font-family: 'Righteous', cursive;
 
+
+  /* font-size: 2.5rem;
+  font-weight: 900; */
+
+
+}
 .subtitle {
   font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+
 }
 
 .continue__btn__container {
@@ -48,7 +61,13 @@
   background: none;
   border: none;
   padding: 0.2rem 1rem;
-  font-style: italic;
+  /* font-style: italic; */
+  font-family: 'Pacifico', cursive;
+}
+
+.continue__btn a {
+  color: gold;
+
 }
 
 .continue__btn:hover {

@@ -1,7 +1,7 @@
 import React from 'react';
 import Nav from '../../components/nav/Nav';
 import Hero from '../../components/hero/Hero';
-import Slider from '../../components/display/Display';
+import Display from '../../components/display/Display';
 import CTABar from '../../components/ctaBar/CTABar';
 
 function Home() {
@@ -9,8 +9,8 @@ function Home() {
     <>
         <Nav />
         <Hero />
+        <Display />
         <CTABar />
-        <Slider />
     </>
   );
 }

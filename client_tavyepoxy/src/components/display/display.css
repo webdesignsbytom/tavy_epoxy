@@ -4,7 +4,7 @@
   grid-template-columns: minmax(400px, .7fr) minmax(400px, 1fr);
   grid-template-rows: repeat(auto-fit, minmax(600px, 1fr));
   width: 100%;
-  padding: 0 3rem;
+  padding: 7.5rem 3rem 4rem 3rem;
   gap: 1rem;
 }
 
@@ -15,6 +15,7 @@
     border-radius: 20px;
     display: grid;
     grid-template-rows: 1fr auto;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
 
 }
 
@@ -58,6 +59,7 @@
   font-family: 'Oswald', sans-serif;
 
   display: grid;
+  
 }
 
 .top__content {

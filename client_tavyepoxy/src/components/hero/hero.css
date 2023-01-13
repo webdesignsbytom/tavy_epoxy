@@ -1,6 +1,6 @@
 .hero__container {
   width: 100%;
-  min-height: 32rem;
+  min-height: 100vh;
   background-image: url('../../assets/images/black_marble.jpg');
   display: grid;
   place-content: center;
@@ -24,3 +24,33 @@
 .subtitle {
   font-weight: 400;
 }
+
+.continue__btn__container {
+  background-color: white;
+  position: absolute;
+  bottom: 75px;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+
+/* .hidden__div {
+  position: absolute;
+  bottom: 70px;
+  width: 100%;
+  background-color: yellow;
+  display: none;
+} */
+
+.continue__btn {
+  font-size: 2rem;
+  color: gold;
+  background: none;
+  border: none;
+  padding: 0.2rem 1rem;
+}
+
+.continue__btn:hover {
+  cursor: pointer;
+}
+

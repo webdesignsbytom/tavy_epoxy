@@ -10,12 +10,14 @@ import OrangeTable1 from '../../assets/images/Et3.png';
 import ArtPiece from '../../assets/images/art_piece.png';
 import WoodInlays from '../../assets/images/wooden_inlays.jpg';
 import LegOptions from '../../assets/images/leg_options.jpg';
+import GalleryComponent from '../../components/gallery/GalleryComponent';
 
 function Gallery() {
   return (
     <>
       <Nav />
-      <main className='gallery__container'>
+      <GalleryComponent />
+      {/* <main className='gallery__container'>
         <article className='gallery__item vertical'>
           <img src={RedTable} alt='Red table' />
         </article>
@@ -24,9 +26,7 @@ function Gallery() {
           <img src={NorthernLights} alt='Northern Lights' />
         </article>
 
-        <article className='gallery__item'>
-          <img src={WoodStyleTable} alt='Wooden striation effect' />
-        </article>
+        
 
         <article className='gallery__item'>
           <img src={CounterTop} alt='Counter top and tiles' />
@@ -51,7 +51,7 @@ function Gallery() {
         <article className='gallery__item'>
           <img src={LegOptions} alt='Available legs for any table' />
         </article>
-      </main>
+      </main> */}
     </>
   );
 }

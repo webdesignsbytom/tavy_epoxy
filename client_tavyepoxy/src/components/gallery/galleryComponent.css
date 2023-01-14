@@ -1,0 +1,38 @@
+.main__container {
+  border: 2px solid black;
+  width: 100%;
+}
+
+.gallery__ul {
+  margin-top: 10rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 0.3fr));
+  /* grid-auto-rows: minmax(200px, 400px); */
+
+
+  /* padding: 5rem; */
+  gap: 2rem;
+  justify-content: center;
+  padding: 1rem 12rem 1rem 12rem;
+  /* grid-auto-flow: dense; */
+  /* overflow: hidden; */
+}
+
+.gallery__listItem {
+background-color: black;
+height: fit-content;
+}
+
+.gallery__item {
+    padding: 0.2rem;
+}
+
+.gallery__item img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery__item p {
+    color: white;
+}

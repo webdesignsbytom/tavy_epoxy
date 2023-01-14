@@ -15,12 +15,15 @@ import Stencil1 from '../../assets/images/stencil1.jpg';
 import Stencil2 from '../../assets/images/stencil2.jpg';
 import BlueTable2 from '../../assets/images/et5.png';
 import Lego from '../../assets/images/product_matching_lego.jpg';
+import LegoCrop from '../../assets/images/lego_cropped.png';
+
 
 
 
 function GalleryComponent() {
   return (
     <main className='main__container'>
+
       <ul className='gallery__ul'>
 
         <li className='gallery__listItem'>
@@ -113,9 +116,17 @@ function GalleryComponent() {
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae iure labore quisquam magni magnam quos similique quibusdam</p>
           </article>
         </li>
+
         <li className='gallery__listItem'>
           <article className='gallery__item'>
             <img src={RedTable} alt='Wooden striation effect' />
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae iure labore quisquam magni magnam quos similique quibusdam</p>
+          </article>
+        </li>
+        
+        <li className='gallery__listItem'>
+          <article className='gallery__item'>
+            <img src={LegoCrop} alt='Wooden striation effect' />
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae iure labore quisquam magni magnam quos similique quibusdam</p>
           </article>
         </li>

@@ -1,15 +1,6 @@
 import React from 'react';
 import './gallery.css';
 import Nav from '../../components/nav/Nav';
-import RedTable from '../../assets/images/red_table.png';
-import NorthernLights from '../../assets/images/northern_lights_crop.png';
-import WoodStyleTable from '../../assets/images/table_close_up.png';
-import CounterTop from '../../assets/images/ex_tiles.jpg';
-import BlueTable1 from '../../assets/images/et6.png';
-import OrangeTable1 from '../../assets/images/Et3.png';
-import ArtPiece from '../../assets/images/art_piece.png';
-import WoodInlays from '../../assets/images/wooden_inlays.jpg';
-import LegOptions from '../../assets/images/leg_options.jpg';
 import GalleryComponent from '../../components/gallery/GalleryComponent';
 
 function Gallery() {

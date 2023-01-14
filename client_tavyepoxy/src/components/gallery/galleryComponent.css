@@ -1,31 +1,31 @@
 .main__container {
   border: 2px solid black;
   width: 100%;
+  display: grid;
+  justify-content: center;
 }
 
 .gallery__ul {
   margin-top: 10rem;
-
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 0.2fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   /* grid-auto-rows: minmax(200px, 400px); */
-
 
   /* padding: 5rem; */
   gap: 2rem;
-  justify-content: center;
   padding: 1rem 12rem 1rem 12rem;
-  /* grid-auto-flow: dense; */
   /* overflow: hidden; */
 }
 
 .gallery__listItem {
-background-color: black;
-height: fit-content;
+  background-color: black;
+  height: fit-content;
+  padding: 1rem;
 }
 
 .gallery__item {
-    padding: 0.2rem;
+  padding: 0.2rem;
+  background-color: pink;
 }
 
 .gallery__item img {
@@ -34,5 +34,5 @@ height: fit-content;
 }
 
 .gallery__item p {
-    color: white;
+  color: white;
 }

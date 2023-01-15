@@ -7,10 +7,9 @@ import CTABar from '../../components/ctaBar/CTABar';
 function Home() {
   return (
     <>
-        <Nav />
+    <Nav />
         <Hero />
         <Display />
-        <CTABar />
     </>
   );
 }

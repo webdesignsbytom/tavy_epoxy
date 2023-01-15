@@ -1,26 +1,68 @@
 .display__container {
-  /* background-color: yellow; */
   display: grid;
-  grid-template-columns: minmax(400px, .7fr) minmax(400px, 1fr);
-  grid-template-rows: repeat(auto-fit, minmax(600px, 1fr));
-  width: 100%;
-  padding: 7.5rem 3rem 4rem 3rem;
-  gap: 1rem;
+  padding: 1rem;
 }
+
+.main__display {
+  display: grid;
+  grid-template-areas: 
+    "slider article1"
+    "slider article2"
+    "cta cta"  
+  ;
+  height: max-content;
+  padding: 3rem 5rem;
+}
+
+.header__article {
+  margin: 0.2rem 4rem;
+
+  display: grid;
+  grid-area: article1;
+
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.2rem;
+
+  min-width: 500px;
+}
+
+.main__article {
+  display: grid;
+  grid-area: article2;
+  width: 100%;
+  grid-auto-flow: row;
+  padding: 3rem 4rem;
+  height: auto;
+  font-family: 'Oswald', sans-serif;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.cta__container {
+  display: grid;
+  grid-area: cta;
+  padding: 3rem 0;
+}
+
+/* IMAGE SLIDER  */
 
 .slider__container {
   background-image: url('../../assets/images/marble_background2.jpg');
-    border: 3px solid black;
-    width: 100%;
-    border-radius: 20px;
-    display: grid;
-    grid-template-rows: 1fr auto;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+  border: 3px solid black;
+  width: 100%;
+  min-width: 400px;
+  border-radius: 20px;
+  max-width: 700px;
+  max-height: 700px;
+  grid-template-rows: 1fr auto;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
 
+  display: grid;
+  grid-area: slider;
 }
 
 .current__image {
-  /* background-color: aquamarine; */
+  background-color: aquamarine;
   display: grid;
   padding: 1rem;
   align-items: center;
@@ -53,19 +95,40 @@
   background-color: black;
   border-radius: 50%;
 }
-  
-.main__article {
-  margin: 0 3rem;
-  font-family: 'Oswald', sans-serif;
 
-  display: grid;
-  
+/* END OF IMAGE SLIDER  */
+
+
+/* Media Queries (MEDIUM DEVICES) */
+
+@media screen and (max-width: 1024px) {
+  .header__article {
+    font-size: 1.5rem;
+  }
+  .main__article {
+font-size: 1rem;
+  }
 }
 
-.top__content {
-  font-size: 2.2rem;
+@media screen and (max-width: 600px) {
+  .main__display {
+    display: grid;
+    grid-template-areas: 
+      "article1"
+      "slider" 
+      "article2"
+      "cta"  
+    ;
+    height: max-content;
+    padding: 3rem 5rem;
+  }
+  .header__article {
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+  .main__article {
+  font-size: 1rem;
+  }
 }
 
-.middle__content, .bottom__content {
-  font-size: 1.2rem;
-}

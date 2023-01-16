@@ -29,7 +29,7 @@ function GalleryComponent() {
         <li className='gallery__listItem'>
           <article className='gallery__item'>
             <img src={WoodStyleTable} alt='Wooden striation effect' />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae iure labore quisquam magni magnam quos similique quibusdam</p>
+            <p>A basic coffee table made into a work of art! A tree striation effect with natural colours and a silver burst.</p>
           </article>
         </li>
 

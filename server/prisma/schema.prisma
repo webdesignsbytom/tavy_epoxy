@@ -18,11 +18,13 @@ enum Role {
 }
 
 model User {
-  id       Int      @id @default(autoincrement())
-  email    String   @unique
-  password String
-  role     Role     @default(USER)
-  designs  Design[]
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  role      Role     @default(USER)
+  firstName String
+  lastName  String
+  designs   Design[]
 }
 
 model Design {

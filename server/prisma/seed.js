@@ -8,6 +8,8 @@ async function seed() {
     data: {
       email: 'notmyrealemail@email.com',
       password: '123',
+      firstName: `Bob`,
+      lastName: `Odin`,
     }
   })
 

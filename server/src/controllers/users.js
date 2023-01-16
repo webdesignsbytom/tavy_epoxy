@@ -5,7 +5,11 @@ const jwt = require('jsonwebtoken');
 
 const hashRate = 8;
 
-const { findAllUsers, findUserByEmail, createUser } = require('../domain/users');
+const {
+  findAllUsers,
+  findUserByEmail,
+  createUser,
+} = require('../domain/users');
 
 const getAllUsers = async (req, res) => {
   console.log('getting all users...');
@@ -13,7 +17,6 @@ const getAllUsers = async (req, res) => {
   try {
     //
     const foundUsers = await findAllUsers();
-    console.log('foundUsers: ', foundUsers);
 
     if (!foundUsers) {
       return res.status(404).json({
@@ -48,11 +51,8 @@ const getAllUsers = async (req, res) => {
 const registerNewUser = async (req, res) => {
   console.log('registering new user...');
 
-  const { email, password } = req.body;
-  console.log('req.body', req.body);
-
+  const { email, password, firstName, lastName } = req.body;
   const lowerCaseEmail = email.toLowerCase();
-  console.log('lowerCaseEmail', lowerCaseEmail);
 
   try {
     if (!lowerCaseEmail || !password) {
@@ -63,7 +63,6 @@ const registerNewUser = async (req, res) => {
     }
 
     const foundUser = await findUserByEmail(lowerCaseEmail);
-    console.log('foundUser', foundUser);
 
     if (foundUser) {
       return res
@@ -72,17 +71,15 @@ const registerNewUser = async (req, res) => {
     }
 
     const hashedPassword = await bcrypt.hash(password, hashRate);
-    console.log('hashedPassword', hashedPassword);
 
-    const newUser = await createUser(lowerCaseEmail, hashedPassword);
-    console.log('newUser', newUser);
+    const newUser = await createUser(lowerCaseEmail, hashedPassword, firstName, lastName);
 
     return res.status(200).json({
-        message: `User ${newUser.email} created`,
-        code: `200`,
-        data: newUser
-    })
-//    
+      message: `User ${newUser.email} created`,
+      code: `200`,
+      data: newUser,
+    });
+    //
   } catch (error) {
     //
     return res.status(500).json({

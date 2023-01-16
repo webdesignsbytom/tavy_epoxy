@@ -3,11 +3,13 @@ const prisma = require('../utils/prisma');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
-const createUser = (email, password) =>
+const createUser = (email, password, firstName, lastName) =>
   prisma.user.create({
     data: {
       email: email,
       password: password,
+      firstName: firstName,
+      lastName: lastName,
     },
   });
 

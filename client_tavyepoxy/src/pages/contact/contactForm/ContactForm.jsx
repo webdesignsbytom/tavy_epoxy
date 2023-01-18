@@ -3,19 +3,23 @@ import { useState } from 'react';
 import './contactForm.css';
 
 function ContactForm() {
-  const [formData, setFormData] = useState({});
+  const [formData, setFormData] = useState({
+    typeofset: '',
+    size: '',
+    material: '',
+    name: '',
+    email: '',
+  });
 
   const handleChange = (event) => {
-    console.log('event', event.target.id);
-    const { value, name } = event.target;
-    console.log('value', value, 'name', name);
-    console.log('formData', formData);
+    const { id } = event.target;
 
     setFormData({
       ...formData,
-      [name]: value,
+      typeofset: id,
     });
   };
+
 
   const handleSubmit = (event) => {};
   return (
@@ -25,13 +29,33 @@ function ContactForm() {
           <div
             className='table__sq'
             value='table'
+            name='table'
             id='table'
-            onClick={handleChange}
+            typeofset='table'
+            onClick={(event) => handleChange(event)}
           >
             Table
           </div>
-          <div className='table__set'>Dining Set</div>
-          <div className='art__piece'>ArtWork</div>
+          <div
+            className='table__set'
+            value='dining-set'
+            name='dining-set'
+            id='dining-set'
+            typeofset='dining-set'
+            onClick={(event) => handleChange(event)}
+          >
+            Dining Set
+          </div>
+          <div
+            className='art__piece'
+            value='art'
+            name='art'
+            id='art'
+            typeofset='art'
+            onClick={(event) => handleChange(event)}
+          >
+            ArtWork
+          </div>
         </div>
 
         <div className='form__container'>
@@ -58,6 +82,13 @@ function ContactForm() {
               />
             </div>
           </form>
+          <div className='data'>
+          typeOfSet={formData.typeofset}
+            size={formData.size}
+            materials={formData.material}
+            name={formData.name}
+            email={formData.email}
+          </div>
         </div>
       </main>
     </div>

@@ -7,11 +7,11 @@ function ContactForm() {
     typeofset: '',
     size: '',
     material: '',
-    name: '',
+    contactname: '',
     email: '',
   });
 
-  const handleChange = (event) => {
+  const selectSetType = (event) => {
     const { id } = event.target;
 
     setFormData({
@@ -20,6 +20,14 @@ function ContactForm() {
     });
   };
 
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    console.log('name', name, value);
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  }
 
   const handleSubmit = (event) => {};
   return (
@@ -32,7 +40,7 @@ function ContactForm() {
             name='table'
             id='table'
             typeofset='table'
-            onClick={(event) => handleChange(event)}
+            onClick={(event) => selectSetType(event)}
           >
             Table
           </div>
@@ -42,7 +50,7 @@ function ContactForm() {
             name='dining-set'
             id='dining-set'
             typeofset='dining-set'
-            onClick={(event) => handleChange(event)}
+            onClick={(event) => selectSetType(event)}
           >
             Dining Set
           </div>
@@ -52,7 +60,7 @@ function ContactForm() {
             name='art'
             id='art'
             typeofset='art'
-            onClick={(event) => handleChange(event)}
+            onClick={(event) => selectSetType(event)}
           >
             ArtWork
           </div>
@@ -72,18 +80,28 @@ function ContactForm() {
             </div>
 
             <div className='name__container'>
-              <label htmlFor='contactName'>contactName:</label>
+              <label htmlFor='contactname'>contactname:</label>
               <input
                 type='text'
-                name='contactName'
-                id='contactName'
+                name='contactname'
+                id='contactname'
                 onChange={handleChange}
                 required
               />
             </div>
+
+            <div className='material__container'>
+              <label htmlFor='material'>material:</label>
+              <select name='material' id='material-select' onChange={handleChange}>
+                <option value=''>--Please choose an option--</option>
+                <option value='oak'>Oak</option>
+                <option value='mdf'>MDF</option>
+                <option value='ash'>Ash</option>
+              </select>
+            </div>
           </form>
           <div className='data'>
-          typeOfSet={formData.typeofset}
+            typeOfSet={formData.typeofset}
             size={formData.size}
             materials={formData.material}
             name={formData.name}

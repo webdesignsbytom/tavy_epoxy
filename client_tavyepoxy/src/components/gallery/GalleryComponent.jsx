@@ -17,120 +17,393 @@ import BlueTable2 from '../../assets/images/et5.png';
 import Lego from '../../assets/images/product_matching_lego.jpg';
 import LegoCrop from '../../assets/images/lego_cropped.png';
 
-
-
-
 function GalleryComponent() {
   return (
-    <main className='main__container'>
+    <main className='gallery__page__container'>
+      <div className='gallery__title'>
+        <h2>Gallery</h2>
+      </div>
+      <div className='gallery__main__container'>
+        <ul className='gallery__ul'>
+          
+          <li className='gallery__listItem'>
+            <article className='gallery__item'>
+              <img src={WoodStyleTable} alt='Wooden striation effect' />
+              <p className='pins__effect'>
+                <div className='pin1'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin2'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='image__text'>
+                  A basic coffee table made into a work of art! A tree striation
+                  effect with natural colours and a silver burst.
+                </div>
 
-      <ul className='gallery__ul'>
+                <div className='pin3'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin4'>
+                  <div className='pin__container'></div>
+                </div>
+              </p>
+            </article>
+          </li>
 
-        <li className='gallery__listItem'>
-          <article className='gallery__item'>
-            <img src={WoodStyleTable} alt='Wooden striation effect' />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae iure labore quisquam magni magnam quos similique quibusdam</p>
-          </article>
-        </li>
+          <li className='gallery__listItem'>
+            <article className='gallery__item'>
+              <img src={BlueTable1} alt='Wooden striation effect' />
+              <p className='pins__effect'>
+                <div className='pin1'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin2'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='image__text'>
+                  A basic coffee table made into a work of art! A tree striation
+                  effect with natural colours and a silver burst.
+                </div>
 
-        <li className='gallery__listItem'>
-          <article className='gallery__item'>
-            <img src={BlueTable1} alt='Wooden striation effect' />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae iure labore quisquam magni magnam quos similique quibusdam</p>
-          </article>
-        </li>
+                <div className='pin3'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin4'>
+                  <div className='pin__container'></div>
+                </div>
+              </p>
+            </article>
+          </li>
 
-        <li className='gallery__listItem'>
-          <article className='gallery__item'>
-            <img src={WoodInlays} alt='Wooden striation effect' />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae iure labore quisquam magni magnam quos similique quibusdam</p>
-          </article>
-        </li>
+          <li className='gallery__listItem'>
+            <article className='gallery__item'>
+              <img src={WoodInlays} alt='Wooden striation effect' />
+              <p className='pins__effect'>
+                <div className='pin1'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin2'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='image__text'>
+                  A basic coffee table made into a work of art! A tree striation
+                  effect with natural colours and a silver burst.
+                </div>
 
-        <li className='gallery__listItem'>
-          <article className='gallery__item'>
-            <img src={OrangeTable1} alt='Wooden striation effect' />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae iure labore quisquam magni magnam quos similique quibusdam</p>
-          </article>
-        </li>
+                <div className='pin3'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin4'>
+                  <div className='pin__container'></div>
+                </div>
+              </p>
+            </article>
+          </li>
 
-        <li className='gallery__listItem'>
-          <article className='gallery__item'>
-            <img src={ArtPiece} alt='Wooden striation effect' />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae iure labore quisquam magni magnam quos similique quibusdam</p>
-          </article>
-        </li>
+          <li className='gallery__listItem'>
+            <article className='gallery__item'>
+              <img src={OrangeTable1} alt='Wooden striation effect' />
+              <p className='pins__effect'>
+                <div className='pin1'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin2'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='image__text'>
+                  A basic coffee table made into a work of art! A tree striation
+                  effect with natural colours and a silver burst.
+                </div>
 
-        <li className='gallery__listItem'>
-          <article className='gallery__item'>
-            <img src={CounterTop} alt='Wooden striation effect' />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae iure labore quisquam magni magnam quos similique quibusdam</p>
-          </article>
-        </li>
+                <div className='pin3'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin4'>
+                  <div className='pin__container'></div>
+                </div>
+              </p>
+            </article>
+          </li>
 
-        <li className='gallery__listItem'>
-          <article className='gallery__item'>
-            <img src={LegOptions} alt='Wooden striation effect' />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae iure labore quisquam magni magnam quos similique quibusdam</p>
-          </article>
-        </li>
+          <li className='gallery__listItem horizontal'>
+            <article className='gallery__item'>
+              <img src={ArtPiece} alt='Wooden striation effect' />
+              <p className='pins__effect'>
+                <div className='pin1'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin2'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='image__text'>
+                  A basic coffee table made into a work of art! A tree striation
+                  effect with natural colours and a silver burst.
+                </div>
 
-        <li className='gallery__listItem'>
-          <article className='gallery__item'>
-            <img src={CoffeeTable1} alt='Wooden striation effect' />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae iure labore quisquam magni magnam quos similique quibusdam</p>
-          </article>
-        </li>
+                <div className='pin3'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin4'>
+                  <div className='pin__container'></div>
+                </div>
+              </p>
+            </article>
+          </li>
 
-        <li className='gallery__listItem'>
-          <article className='gallery__item'>
-            <img src={NorthernLights} alt='Wooden striation effect' />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae iure labore quisquam magni magnam quos similique quibusdam</p>
-          </article>
-        </li>
+          <li className='gallery__listItem'>
+            <article className='gallery__item'>
+              <img src={CounterTop} alt='Wooden striation effect' />
+              <p className='pins__effect'>
+                <div className='pin1'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin2'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='image__text'>
+                  A basic coffee table made into a work of art! A tree striation
+                  effect with natural colours and a silver burst.
+                </div>
 
-        <li className='gallery__listItem'>
-          <article className='gallery__item'>
-            <img src={WoodenInlays2} alt='Wooden striation effect' />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae iure labore quisquam magni magnam quos similique quibusdam</p>
-          </article>
-        </li>
+                <div className='pin3'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin4'>
+                  <div className='pin__container'></div>
+                </div>
+              </p>
+            </article>
+          </li>
 
-        <li className='gallery__listItem'>
-          <article className='gallery__item'>
-            <img src={BlueTable2} alt='Wooden striation effect' />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae iure labore quisquam magni magnam quos similique quibusdam</p>
-          </article>
-        </li>
+          <li className='gallery__listItem'>
+            <article className='gallery__item'>
+              <img src={LegOptions} alt='Wooden striation effect' />
+              <p className='pins__effect'>
+                <div className='pin1'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin2'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='image__text'>
+                  A basic coffee table made into a work of art! A tree striation
+                  effect with natural colours and a silver burst.
+                </div>
 
-        <li className='gallery__listItem'>
-          <article className='gallery__item'>
-            <img src={Stencil1} alt='Wooden striation effect' />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae iure labore quisquam magni magnam quos similique quibusdam</p>
-          </article>
-        </li>
+                <div className='pin3'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin4'>
+                  <div className='pin__container'></div>
+                </div>
+              </p>
+            </article>
+          </li>
 
-        <li className='gallery__listItem'>
-          <article className='gallery__item'>
-            <img src={Stencil2} alt='Wooden striation effect' />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae iure labore quisquam magni magnam quos similique quibusdam</p>
-          </article>
-        </li>
+          <li className='gallery__listItem'>
+            <article className='gallery__item'>
+              <img src={CoffeeTable1} alt='Wooden striation effect' />
+              <p className='pins__effect'>
+                <div className='pin1'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin2'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='image__text'>
+                  A basic coffee table made into a work of art! A tree striation
+                  effect with natural colours and a silver burst.
+                </div>
 
-        <li className='gallery__listItem'>
-          <article className='gallery__item'>
-            <img src={RedTable} alt='Wooden striation effect' />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae iure labore quisquam magni magnam quos similique quibusdam</p>
-          </article>
-        </li>
-        
-        <li className='gallery__listItem'>
-          <article className='gallery__item'>
-            <img src={LegoCrop} alt='Wooden striation effect' />
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae iure labore quisquam magni magnam quos similique quibusdam</p>
-          </article>
-        </li>
-      </ul>
+                <div className='pin3'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin4'>
+                  <div className='pin__container'></div>
+                </div>
+              </p>
+            </article>
+          </li>
+
+          <li className='gallery__listItem vertical'>
+            <article className='gallery__item'>
+              <img src={RedTable} alt='Wooden striation effect' />
+              <p className='pins__effect'>
+                <div className='pin1'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin2'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='image__text'>
+                  A basic coffee table made into a work of art! A tree striation
+                  effect with natural colours and a silver burst.
+                </div>
+
+                <div className='pin3'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin4'>
+                  <div className='pin__container'></div>
+                </div>
+              </p>
+            </article>
+          </li>
+
+          <li className='gallery__listItem'>
+            <article className='gallery__item'>
+              <img src={NorthernLights} alt='Wooden striation effect' />
+              <p className='pins__effect'>
+                <div className='pin1'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin2'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='image__text'>
+                  A basic coffee table made into a work of art! A tree striation
+                  effect with natural colours and a silver burst.
+                </div>
+
+                <div className='pin3'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin4'>
+                  <div className='pin__container'></div>
+                </div>
+              </p>
+            </article>
+          </li>
+
+          <li className='gallery__listItem'>
+            <article className='gallery__item'>
+              <img src={WoodenInlays2} alt='Wooden striation effect' />
+              <p className='pins__effect'>
+                <div className='pin1'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin2'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='image__text'>
+                  A basic coffee table made into a work of art! A tree striation
+                  effect with natural colours and a silver burst.
+                </div>
+
+                <div className='pin3'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin4'>
+                  <div className='pin__container'></div>
+                </div>
+              </p>
+            </article>
+          </li>
+
+          <li className='gallery__listItem'>
+            <article className='gallery__item'>
+              <img src={BlueTable2} alt='Wooden striation effect' />
+              <p className='pins__effect'>
+                <div className='pin1'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin2'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='image__text'>
+                  A basic coffee table made into a work of art! A tree striation
+                  effect with natural colours and a silver burst.
+                </div>
+
+                <div className='pin3'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin4'>
+                  <div className='pin__container'></div>
+                </div>
+              </p>
+            </article>
+          </li>
+
+          <li className='gallery__listItem'>
+            <article className='gallery__item'>
+              <img src={Stencil1} alt='Wooden striation effect' />
+              <p className='pins__effect'>
+                <div className='pin1'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin2'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='image__text'>
+                  A basic coffee table made into a work of art! A tree striation
+                  effect with natural colours and a silver burst.
+                </div>
+
+                <div className='pin3'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin4'>
+                  <div className='pin__container'></div>
+                </div>
+              </p>
+            </article>
+          </li>
+
+          <li className='gallery__listItem'>
+            <article className='gallery__item'>
+              <img src={Stencil2} alt='Wooden striation effect' />
+              <p className='pins__effect'>
+                <div className='pin1'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin2'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='image__text'>
+                  A basic coffee table made into a work of art! A tree striation
+                  effect with natural colours and a silver burst.
+                </div>
+
+                <div className='pin3'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin4'>
+                  <div className='pin__container'></div>
+                </div>
+              </p>
+            </article>
+          </li>
+
+          
+
+          <li className='gallery__listItem'>
+            <article className='gallery__item'>
+              <img src={LegoCrop} alt='Wooden striation effect' />
+              <p className='pins__effect'>
+                <div className='pin1'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin2'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='image__text'>
+                  A basic coffee table made into a work of art! A tree striation
+                  effect with natural colours and a silver burst.
+                </div>
+
+                <div className='pin3'>
+                  <div className='pin__container'></div>
+                </div>
+                <div className='pin4'>
+                  <div className='pin__container'></div>
+                </div>
+              </p>
+            </article>
+          </li>
+        </ul>
+      </div>
     </main>
   );
 }

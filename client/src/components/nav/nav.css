@@ -1,7 +1,6 @@
 nav {
   display: grid;
-  grid-template-columns: 20% 80%;
-  padding: 0.4rem;
+  grid-template-columns: 75px 1fr;
   background-color: rgba(0, 0, 0, 0.463);
   width: 100%;
   position: fixed;
@@ -9,13 +8,16 @@ nav {
 }
 
 .logo__container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  background-color: red;
+  display: grid;
+  padding: 0.2rem;
 }
 
 .logo__container img {
-  width: 3rem;
+  width: 3.4rem;
+  display: grid;
+  align-items: center;
+  border: 2px solid black;
 }
 
 .menu__container {
@@ -34,4 +36,3 @@ nav {
   /* padding: 1rem; */
   color: white;
 }
-

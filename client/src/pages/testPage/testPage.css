@@ -1,2 +1,21 @@
-div {
+.masonry {
+  columns: 4;
+  column-gap: 16px;
+  @media (max-width: 1200px) {
+    columns: 3;
+  }
+  @media (max-width: 992px) {
+    columns: 2;
+  }
+  @media (max-width: 768px) {
+    columns: 1;
+  }
+}
+.grid {
+  display: inline-block;
+  margin-bottom: 16px;
+  position: relative;
+}
+.mt-auto {
+  margin-top: auto;
 }

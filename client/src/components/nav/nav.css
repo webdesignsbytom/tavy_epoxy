@@ -8,7 +8,6 @@ nav {
 }
 
 .logo__container {
-  background-color: red;
   display: grid;
   padding: 0.2rem;
 }

@@ -14,7 +14,6 @@ import WoodenInlays2 from '../../assets/images/large_inlays.png';
 import Stencil1 from '../../assets/images/stencil1.jpg';
 import Stencil2 from '../../assets/images/stencil2.jpg';
 import BlueTable2 from '../../assets/images/et5.png';
-import Lego from '../../assets/images/product_matching_lego.jpg';
 import LegoCrop from '../../assets/images/lego_cropped.png';
 
 

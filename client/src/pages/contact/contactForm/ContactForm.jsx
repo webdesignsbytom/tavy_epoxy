@@ -39,7 +39,7 @@ function ContactForm() {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    console.log('name', name, value);
+
     setFormData({
       ...formData,
       [name]: value,
@@ -47,26 +47,27 @@ function ContactForm() {
   };
 
   const handleSubmit = (event) => {};
+
   return (
     <div className='contact__container'>
       <main className='contact__form'>
         <div className='order__options'>
+
           <div
             className={tableSelected}
             value='table'
             name='table'
             id='table'
-            typeofset='table'
             onClick={(event) => selectSetType(event)}
           >
             Table
           </div>
+
           <div
             className={diningSetSelected}
             value='dining-set'
             name='dining-set'
             id='dining-set'
-            typeofset='dining-set'
             onClick={(event) => selectSetType(event)}
           >
             Dining Set
@@ -76,7 +77,6 @@ function ContactForm() {
             value='art'
             name='art'
             id='art'
-            typeofset='art'
             onClick={(event) => selectSetType(event)}
           >
             ArtWork

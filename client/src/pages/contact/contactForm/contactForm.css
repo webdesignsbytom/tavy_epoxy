@@ -32,6 +32,10 @@
   background-color: white;
 }
 
+.table__sq:hover, .selected__sq:hover {
+  filter: brightness(0.8);
+}
+
 .selected__sq {
   border: 3px solid green;
   width: 175px;

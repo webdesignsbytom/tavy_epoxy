@@ -5,7 +5,6 @@ import ContactForm from './contactForm/ContactForm'
 function Contact() {
   return (
     <>
-    test
     <Nav />
     <ContactForm />
     </>

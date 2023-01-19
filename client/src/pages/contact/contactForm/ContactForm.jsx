@@ -1,19 +1,17 @@
 import React from 'react';
 import { useState } from 'react';
 import './contactForm.css';
+import { formDefaultData } from '../../../utils/FormData';
 
 function ContactForm() {
-  const [formData, setFormData] = useState({
-    typeofset: '',
-    size: '',
-    material: '',
-    contactname: '',
-    email: '',
-  });
+  const [formData, setFormData] = useState(formDefaultData);
+
 
   const selectSetType = (event) => {
     const { id } = event.target;
+console.log('xxx', event.target.className)
 
+event.target.className += ' newTest'
     setFormData({
       ...formData,
       typeofset: id,
@@ -85,6 +83,17 @@ function ContactForm() {
                 type='text'
                 name='contactname'
                 id='contactname'
+                onChange={handleChange}
+                required
+              />
+            </div>
+
+            <div className='colours__container'>
+              <label htmlFor='numOfColours'>numOfColours:</label>
+              <input
+                type='number'
+                name='numOfColours'
+                id='numOfColours'
                 onChange={handleChange}
                 required
               />

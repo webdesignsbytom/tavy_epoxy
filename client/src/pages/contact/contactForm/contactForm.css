@@ -23,13 +23,22 @@
   align-items: center;
 }
 
-.order__options > * {
+.table__sq {
   border: 4px solid black;
   width: 175px;
   height: 175px;
   border-radius: 12px;
   padding: 0.8rem;
   background-color: white;
+}
+
+.selected__sq {
+  border: 3px solid green;
+  width: 175px;
+  height: 175px;
+  border-radius: 12px;
+  padding: 0.8rem;
+  background-color: blue;
 }
 
 .form__container {

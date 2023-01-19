@@ -1,17 +1,36 @@
 import React from 'react';
 import { useState } from 'react';
 import './contactForm.css';
-import { formDefaultData } from '../../../utils/FormData';
+import { formDefaultData, classInitValues } from '../../../utils/FormData';
 
 function ContactForm() {
   const [formData, setFormData] = useState(formDefaultData);
-
+  const [tableSelected, setTableSelected] = useState(classInitValues);
+  const [diningSetSelected, setDiningSetSelected] = useState(classInitValues);
+  const [artSelected, setArtSelected] = useState(classInitValues);
 
   const selectSetType = (event) => {
     const { id } = event.target;
-console.log('xxx', event.target.className)
+    console.log('xxx', event.target.className);
 
-event.target.className += ' newTest'
+    if (id === 'table') {
+      setTableSelected('selected__sq');
+      setDiningSetSelected(classInitValues);
+      setArtSelected(classInitValues);
+    }
+
+    if (id === 'dining-set') {
+      setDiningSetSelected('selected__sq');
+      setTableSelected(classInitValues);
+      setArtSelected(classInitValues);
+    }
+
+    if (id === 'art') {
+      setArtSelected('selected__sq');
+      setDiningSetSelected(classInitValues);
+      setTableSelected(classInitValues);
+    }
+
     setFormData({
       ...formData,
       typeofset: id,
@@ -23,9 +42,9 @@ event.target.className += ' newTest'
     console.log('name', name, value);
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
     });
-  }
+  };
 
   const handleSubmit = (event) => {};
   return (
@@ -33,7 +52,7 @@ event.target.className += ' newTest'
       <main className='contact__form'>
         <div className='order__options'>
           <div
-            className='table__sq'
+            className={tableSelected}
             value='table'
             name='table'
             id='table'
@@ -43,7 +62,7 @@ event.target.className += ' newTest'
             Table
           </div>
           <div
-            className='table__set'
+            className={diningSetSelected}
             value='dining-set'
             name='dining-set'
             id='dining-set'
@@ -53,7 +72,7 @@ event.target.className += ' newTest'
             Dining Set
           </div>
           <div
-            className='art__piece'
+            className={artSelected}
             value='art'
             name='art'
             id='art'
@@ -101,7 +120,11 @@ event.target.className += ' newTest'
 
             <div className='material__container'>
               <label htmlFor='material'>material:</label>
-              <select name='material' id='material-select' onChange={handleChange}>
+              <select
+                name='material'
+                id='material-select'
+                onChange={handleChange}
+              >
                 <option value=''>--Please choose an option--</option>
                 <option value='oak'>Oak</option>
                 <option value='mdf'>MDF</option>

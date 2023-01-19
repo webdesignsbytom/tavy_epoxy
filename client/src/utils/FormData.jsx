@@ -7,6 +7,8 @@ export const formDefaultData = {
     numOfColours: ''
 };
 
+export const classInitValues = 'table__sq'
+
 // export const sampleProfileData = {
 //   username: '',
 //   email: '',

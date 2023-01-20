@@ -8,6 +8,9 @@ function ContactForm() {
   const [tableSelected, setTableSelected] = useState(classInitValues);
   const [diningSetSelected, setDiningSetSelected] = useState(classInitValues);
   const [artSelected, setArtSelected] = useState(classInitValues);
+  const [selectedFile, setSelectedFile] = useState('No file selected');
+
+  console.log('selected file', selectedFile);
 
   const selectSetType = (event) => {
     const { id } = event.target;
@@ -83,71 +86,86 @@ function ContactForm() {
         </div>
 
         <div className='form__container'>
+          <div className='upper__container'>
+            <article className='contact__heading__container'>
+              <div className='contact__title'>
+                <h2>CONTACT US</h2>
+              </div>
+              <div className='contact__subtitle'>
+                <p>
+                  Reach out to me using the form. Include as much data as you
+                  can provide. Upload files with any designs you want to use
+                </p>
+              </div>
+            </article>
 
-          <div className="upper__container">
-          <article className='contact__heading__container'>
-            <div className="contact__title">
-              <h2>CONTACT US</h2>
-            </div>
-            <div className="contact__subtitle">
-              <p>
-              Reach out to me using the form. Include as much data as you can provide. Upload files with any designs you want to use
-              </p>
-            </div>
-          </article>
+            <form onSubmit={handleSubmit} className='contact__form__actions'>
+              <div className='email__container'>
+                <label htmlFor='email'>Email:</label>
+                <input
+                  type='email'
+                  name='email'
+                  id='email'
+                  onChange={handleChange}
+                  required
+                />
+              </div>
 
-          <form onSubmit={handleSubmit} className='contact__form__actions'>
-            <div className='email__container'>
-              <label htmlFor='email'>Email:</label>
-              <input
-                type='email'
-                name='email'
-                id='email'
-                onChange={handleChange}
-                required
-              />
-            </div>
+              <div className='name__container'>
+                <label htmlFor='contactname'>Contact Name:</label>
+                <input
+                  type='text'
+                  name='contactname'
+                  id='contactname'
+                  onChange={handleChange}
+                  required
+                />
+              </div>
 
-            <div className='name__container'>
-              <label htmlFor='contactname'>Contact Name:</label>
-              <input
-                type='text'
-                name='contactname'
-                id='contactname'
-                onChange={handleChange}
-                required
-              />
-            </div>
+              <div className='colours__container'>
+                <label htmlFor='numOfColours'>Number of colours:</label>
+                <input
+                  type='number'
+                  name='numOfColours'
+                  id='numOfColours'
+                  onChange={handleChange}
+                  required
+                />
+              </div>
 
-            <div className='colours__container'>
-              <label htmlFor='numOfColours'>Number of colours:</label>
-              <input
-                type='number'
-                name='numOfColours'
-                id='numOfColours'
-                onChange={handleChange}
-                required
-              />
-            </div>
-
-            <div className='material__container'>
-              <label htmlFor='material'>Furniture material:</label>
-              <select
-                name='material'
-                id='material-select'
-                onChange={handleChange}
-              >
-                <option value=''>--Please choose an option--</option>
-                <option value='oak'>Oak</option>
-                <option value='mdf'>MDF</option>
-                <option value='ash'>Ash</option>
-              </select>
-            </div>
-          </form>
+              <div className='material__container'>
+                <label htmlFor='material'>Furniture material:</label>
+                <select
+                  name='material'
+                  id='material-select'
+                  onChange={handleChange}
+                >
+                  <option value=''>--Please choose an option--</option>
+                  <option value='oak'>Oak</option>
+                  <option value='mdf'>MDF</option>
+                  <option value='ash'>Ash</option>
+                </select>
+              </div>
+              <div className='material__container'>
+                <label htmlFor='material'>Design Files:</label>
+                <input
+                  type='file'
+                  name='file'
+                  onChange={(e) => setSelectedFile(e.target.files[0])}
+                />
+              </div>
+            </form>
           </div>
 
           <div className='response__data'>
-
+            <div className='response__container'>
+              <h5 className='response__title'>Contact Name</h5>
+              <span className='form__span'>{formData.name}</span>
+            </div>
+            <div className='response__container'>
+              <h5 className='response__title'>Email</h5>
+              <span className='form__span'>{formData.email}</span>
+            </div>
             <div className='response__container'>
               <h5 className='response__title'>Type Of Set</h5>
               <span className='form__span'>{formData.typeofset}</span>
@@ -161,17 +179,13 @@ function ContactForm() {
               <span className='form__span'>{formData.material}</span>
             </div>
             <div className='response__container'>
-              <h5 className='response__title'>Contact Name</h5>
-              <span className='form__span'>{formData.name}</span>
-            </div>
-            <div className='response__container'>
-              <h5 className='response__title'>Email</h5>
-              <span className='form__span'>{formData.email}</span>
+              <h5 className='response__title'>File name</h5>
+              <span className='form__span'>{selectedFile.name}</span>
             </div>
           </div>
 
-          <div className="submit__btn">
-            <div className="btn__container">
+          <div className='submit__btn'>
+            <div className='btn__container'>
               <button>SUBMIT</button>
             </div>
           </div>

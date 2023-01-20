@@ -1,6 +1,11 @@
 .footer__container {
     min-height: 200px;
     background-color: rgba(0, 0, 0, 0.426);
+    width: 100%;
+    font-family: 'Oswald', sans-serif;
+    display: grid;
+    padding: 1rem;
+    text-align: center;
 
 }
 
@@ -8,6 +13,9 @@
     display: grid;
     grid-auto-flow: column;
     
+}
+.footer__data span {
+    color: white;
 }
 .contact__information {
     /* background-color: yellow; */
@@ -22,5 +30,9 @@
     display: grid;
 }
 
-
+.rights__footer {
+    padding: 1rem 1rem 0 1rem;
+    color: white;
+    text-align: center;
+}
 

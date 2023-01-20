@@ -51,7 +51,7 @@ padding-top: 3rem;
   display: grid;
   border-radius: 12px;
   background-color: rgb(139, 176, 224);
-
+  grid-template-rows: 1fr auto auto;
 }
 
 .upper__container {
@@ -90,6 +90,8 @@ padding-top: 3rem;
   display: flex;
   align-items: center;
 }
+
+
 
 .form__span {
   background-color: green;

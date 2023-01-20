@@ -15,16 +15,38 @@ function Footer() {
             <span>Email Address</span>
           </div>
           <div className='site__navigation'>
-            <a href='#'>Home</a>
-            <a href='#'>Gallery</a>
-            <a href='#'>Design</a>
+            <a href='#'>
+              <span>Home</span>
+            </a>
+            <a href='/about'>
+              <span>About</span>
+            </a>
+            <a href='/gallery'>
+              <span>Gallery</span>
+            </a>
+            <a href='/gallery'>
+              <span>Contact</span>
+            </a>
+            <a href='/design'>
+              <span>Design</span>
+            </a>
+            <a href='/account'>
+              <span>Account</span>
+            </a>
           </div>
           <div className='social__media'>
-            <span>twitter</span>
-            <span>instagram</span>
-            <span>tic-tok</span>
+            <a href='#'>
+              <span>Twitter</span>
+            </a>
+            <a href='#'>
+              <span>Instagram</span>
+            </a>
+            <a href='#'>
+              <span>Tic-Tok</span>
+            </a>
           </div>
         </div>
+        <article className='rights__footer'>All rights reserved. Developed by Tom Brockington</article>
       </footer>
     </>
   );

@@ -100,6 +100,19 @@
   border-radius: 50%;
 }
 
+.hidden__box {
+  display: none;
+}
+
+.hidden__box img {
+width: 3rem;
+height: 3rem;
+}
+
+.slider__icon:hover {
+  display: block;
+}
+
 /* END OF IMAGE SLIDER  */
 
 

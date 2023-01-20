@@ -22,7 +22,7 @@ function GalleryComponent() {
   return (
     <main className='gallery__page__container'>
       <div className='gallery__title'>
-        <h2>Gallery</h2>
+        <h2>GALLERY</h2>
       </div>
       
       <div className='gallery__main__container'>

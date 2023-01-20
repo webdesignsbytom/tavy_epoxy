@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Kodchasan:wght@700&family=Lemon&family=Righteous&display=swap');
+
 .gallery__page__container {
   display: grid;
   width: 100%;
@@ -9,8 +11,8 @@
   display: grid;
   justify-items: center;
   padding-bottom: 4rem;
-  font-family: 'Oswald', sans-serif;
-font-size: 2rem;
+  font-family: 'Kodchasan', sans-serif;
+  font-size: 2rem;
 }
 
 .gallery__main__container {
@@ -57,7 +59,6 @@ font-size: 2rem;
 }
 .gallery__item {
   padding: 0.2rem;
-
 }
 
 .gallery__item img {
@@ -69,7 +70,6 @@ font-size: 2rem;
 .gallery__item p {
   color: white;
 }
-
 
 .gallery__item p {
   color: black;
@@ -86,11 +86,10 @@ font-size: 2rem;
 
 .pins__effect {
   display: grid;
-  grid-template-areas: 
-    "pin1 pin2"
-    "text text"
-    "pin3 pin4"
-  ;
+  grid-template-areas:
+    'pin1 pin2'
+    'text text'
+    'pin3 pin4';
   grid-template-rows: auto 1fr auto;
 }
 
@@ -113,14 +112,12 @@ font-size: 2rem;
   display: grid;
   justify-content: end;
   width: 100px;
-
 }
 .pin3 {
   grid-area: pin3;
   display: grid;
   justify-content: start;
   width: 100px;
-
 }
 
 .pin4 {
@@ -128,7 +125,6 @@ font-size: 2rem;
   display: grid;
   justify-content: end;
   width: 100px;
-
 }
 
 .image__text {

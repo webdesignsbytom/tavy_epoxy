@@ -1,24 +1,15 @@
 export const formDefaultData = {
+  contactname: '',
+  email: '',
   typeofset: '',
-    size: '',
-    material: '',
-    contactname: '',
-    email: '',
-    numOfColours: ''
+  material: '',
+  style: '',
+  size: '',
+  numOfColours: '',
+  measurementScale: 'mm',
+  dimensionX: 0,
+  dimensionY: 0,
+  dimensionZ: 0,
 };
 
-export const classInitValues = 'table__sq'
-
-// export const sampleProfileData = {
-//   username: '',
-//   email: '',
-//   password: '',
-//   firstname: '',
-//   lastname: '',
-//   biography: '',
-//   profileImgUrl: '',
-// }
-
-// export const profileFormState = [
-//   'username', 'email', 'password', 'firstname', 'lastname', 'biography', 'profileImgUrl'
-// ]
+export const classInitValues = 'table__sq';

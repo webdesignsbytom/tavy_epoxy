@@ -2,13 +2,15 @@
   display: grid;
   width: 100%;
   place-content: center;
-  padding-top: 8rem;
+  padding-top: 7rem;
 }
 
 .gallery__title {
   display: grid;
   justify-items: center;
   padding-bottom: 4rem;
+  font-family: 'Oswald', sans-serif;
+font-size: 2rem;
 }
 
 .gallery__main__container {
@@ -27,6 +29,9 @@
 .gallery__listItem {
   height: fit-content;
   padding: 1rem;
+}
+.gallery__listItem:hover {
+  scale: 1.8;
 }
 
 .gallery__ul {

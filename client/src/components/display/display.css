@@ -106,10 +106,10 @@
 /* Media Queries (MEDIUM DEVICES) */
 @media screen and (min-width: 1400px) {
   .header__article {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .main__article {
-font-size: 1.5rem;
+font-size: 1.3rem;
   }
 }
 

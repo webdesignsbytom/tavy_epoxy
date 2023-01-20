@@ -39,4 +39,5 @@ nav {
 
 .menu__container a:hover {
 background-color: black;
+scale: 1.2;
 }

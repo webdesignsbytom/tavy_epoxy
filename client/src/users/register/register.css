@@ -42,3 +42,8 @@
     border-radius: 12px;
     border: 1px black;
 }
+
+.login__link {
+  padding-top: 1rem;
+  text-align: center;
+}

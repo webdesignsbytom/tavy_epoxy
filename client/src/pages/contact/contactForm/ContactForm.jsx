@@ -133,25 +133,26 @@ function ContactForm() {
           </form>
 
           <div className='response__data'>
+
             <div className='response__container'>
               <h5 className='response__title'>Type Of Set</h5>
               <span className='form__span'>{formData.typeofset}</span>
             </div>
             <div className='response__container'>
-            <h5>Size</h5>
-              <span>{formData.size}</span>
-              </div>
-            <div className='response__container'>
-              <h5>Material</h5>
-              <span>{formData.material}</span>
+              <h5 className='response__title'>Size</h5>
+              <span className='form__span'>{formData.size}</span>
             </div>
             <div className='response__container'>
-            <h5>Contact Name</h5>
-              <span>{formData.name}</span>
-              </div>
+              <h5 className='response__title'>Material</h5>
+              <span className='form__span'>{formData.material}</span>
+            </div>
             <div className='response__container'>
-              <h5>Email</h5>
-              <span>{formData.email}</span>
+              <h5 className='response__title'>Contact Name</h5>
+              <span className='form__span'>{formData.name}</span>
+            </div>
+            <div className='response__container'>
+              <h5 className='response__title'>Email</h5>
+              <span className='form__span'>{formData.email}</span>
             </div>
           </div>
         </div>

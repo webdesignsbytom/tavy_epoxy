@@ -32,6 +32,7 @@ font-size: 2rem;
 }
 .gallery__listItem:hover {
   scale: 1.8;
+  background-color: grey;
 }
 
 .gallery__ul {

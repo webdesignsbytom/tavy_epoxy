@@ -83,6 +83,19 @@ function ContactForm() {
         </div>
 
         <div className='form__container'>
+
+          <div className="upper__container">
+          <article className='contact__heading__container'>
+            <div className="contact__title">
+              <h2>CONTACT US</h2>
+            </div>
+            <div className="contact__subtitle">
+              <p>
+              Reach out to me using the form. Include as much data as you can provide. Upload files with any designs you want to use
+              </p>
+            </div>
+          </article>
+
           <form onSubmit={handleSubmit} className='contact__form__actions'>
             <div className='email__container'>
               <label htmlFor='email'>Email:</label>
@@ -131,6 +144,7 @@ function ContactForm() {
               </select>
             </div>
           </form>
+          </div>
 
           <div className='response__data'>
 
@@ -153,6 +167,12 @@ function ContactForm() {
             <div className='response__container'>
               <h5 className='response__title'>Email</h5>
               <span className='form__span'>{formData.email}</span>
+            </div>
+          </div>
+
+          <div className="submit__btn">
+            <div className="btn__container">
+              <button>SUBMIT</button>
             </div>
           </div>
         </div>

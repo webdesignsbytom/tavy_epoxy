@@ -1,0 +1,49 @@
+.login__page {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+  }
+  
+  .login__form__container {
+    background-color: lightblue;
+    border: 1px solid black;
+    border-radius: 1rem;
+    font-family: 'Oswald', sans-serif;
+    padding: 1rem;
+  }
+  
+  .title__container {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  
+  .login__form {
+    background-color: pink;
+    display: grid;
+    padding: 1rem;
+    gap: 5px;
+    border: 1px solid black;
+    border-radius: 12px;
+    font-size: 1.3rem;
+  
+  }
+  
+  .login__form > * {
+    display: grid;
+    text-align: center;
+  }
+  .submit__container {
+      padding-top: 1rem;
+  }
+  
+  .btn {
+      padding: 0.5rem;
+      border-radius: 12px;
+      border: 1px black;
+  }
+  
+  .register__link {
+    padding-top: 1rem;
+    text-align: center;
+  }

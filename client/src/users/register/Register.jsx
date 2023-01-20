@@ -8,7 +8,10 @@ function Register() {
       <Nav />
       <div className='register__page'>
         <div className='register__form__container'>
-          <div className='title__container'>REGISTER</div>
+          
+          <div className='title__container'>
+            <h2>REGISTER</h2>
+          </div>
 
           <form action='' className='register__form'>
             <label htmlFor='email'>

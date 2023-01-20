@@ -25,7 +25,6 @@ nav {
   display: grid;
   justify-self: end;
   align-items: center;
-  gap: 1rem;
   grid-auto-flow: column;
   gap: 4rem;
   padding-right: 1rem;
@@ -38,3 +37,6 @@ nav {
   color: white;
 }
 
+.menu__container a:hover {
+background-color: black;
+}

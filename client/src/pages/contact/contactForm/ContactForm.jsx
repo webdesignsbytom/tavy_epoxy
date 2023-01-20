@@ -9,12 +9,12 @@ function ContactForm() {
   const [diningSetSelected, setDiningSetSelected] = useState(classInitValues);
   const [artSelected, setArtSelected] = useState(classInitValues);
   const [selectedFile, setSelectedFile] = useState('No file selected');
+  const [measurementSelected, setMeasurementSelected] = useState('mm');
 
   console.log('selected file', selectedFile);
 
   const selectSetType = (event) => {
     const { id } = event.target;
-    console.log('xxx', event.target.className);
 
     if (id === 'table') {
       setTableSelected('selected__sq');
@@ -55,6 +55,7 @@ function ContactForm() {
     <div className='contact__container'>
       <main className='contact__form'>
         <div className='order__options'>
+          <div className='misc__title'>SELECT</div>
           <div
             className={tableSelected}
             value='table'
@@ -100,17 +101,6 @@ function ContactForm() {
             </article>
 
             <form onSubmit={handleSubmit} className='contact__form__actions'>
-              <div className='email__container'>
-                <label htmlFor='email'>Email:</label>
-                <input
-                  type='email'
-                  name='email'
-                  id='email'
-                  onChange={handleChange}
-                  required
-                />
-              </div>
-
               <div className='name__container'>
                 <label htmlFor='contactname'>Contact Name:</label>
                 <input
@@ -119,18 +109,20 @@ function ContactForm() {
                   id='contactname'
                   onChange={handleChange}
                   required
-                />
+                />{' '}
+                <span>Required</span>
               </div>
 
-              <div className='colours__container'>
-                <label htmlFor='numOfColours'>Number of colours:</label>
+              <div className='email__container'>
+                <label htmlFor='email'>Email:</label>
                 <input
-                  type='number'
-                  name='numOfColours'
-                  id='numOfColours'
+                  type='email'
+                  name='email'
+                  id='email'
                   onChange={handleChange}
                   required
-                />
+                />{' '}
+                <span>Required</span>
               </div>
 
               <div className='material__container'>
@@ -146,6 +138,59 @@ function ContactForm() {
                   <option value='ash'>Ash</option>
                 </select>
               </div>
+
+              <div className='style__container'>
+                <label htmlFor='style'>Furniture style:</label>
+                <select name='style' id='style-select' onChange={handleChange}>
+                  <option value=''>--Please choose an option--</option>
+                  <option value='striation'>Striations</option>
+                  <option value='swirls'>Swirls</option>
+                  <option value='galaxy'>Galaxy</option>
+                  <option value='cells'>Cells</option>
+                </select>
+              </div>
+
+              <div className='dimensions__container'>
+                <label htmlFor='numOfColours'>Dimensions</label>
+                <input
+                  type='number'
+                  name='dimensionX'
+                  id='dimensionX'
+                  onChange={handleChange}
+                />{' '}
+                <span>x</span>
+                <input
+                  type='number'
+                  name='dimensionY'
+                  id='dimensionY'
+                  onChange={handleChange}
+                />{' '}
+                <span>y</span>
+                <input
+                  type='number'
+                  name='dimensionZ'
+                  id='dimensionZ'
+                  onChange={handleChange}
+                />{' '}
+                <span>z</span>
+                <select name='measurementScale' id='measurementScale-select' onChange={handleChange}>
+                  <option value='mm'>mm</option>
+                  <option value='cm'>cm</option>
+                  <option value='in'>in</option>
+                </select>
+              </div>
+
+              <div className='colours__container'>
+                <label htmlFor='numOfColours'>Number of colours:</label>
+                <input
+                  type='number'
+                  name='numOfColours'
+                  id='numOfColours'
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+
               <div className='material__container'>
                 <label htmlFor='material'>Design Files:</label>
                 <input
@@ -160,7 +205,7 @@ function ContactForm() {
           <div className='response__data'>
             <div className='response__container'>
               <h5 className='response__title'>Contact Name</h5>
-              <span className='form__span'>{formData.name}</span>
+              <span className='form__span'>{formData.contactname}</span>
             </div>
             <div className='response__container'>
               <h5 className='response__title'>Email</h5>
@@ -171,12 +216,23 @@ function ContactForm() {
               <span className='form__span'>{formData.typeofset}</span>
             </div>
             <div className='response__container'>
-              <h5 className='response__title'>Size</h5>
-              <span className='form__span'>{formData.size}</span>
-            </div>
-            <div className='response__container'>
               <h5 className='response__title'>Material</h5>
               <span className='form__span'>{formData.material}</span>
+            </div>
+            <div className='response__container'>
+              <h5 className='response__title'>Colour amount</h5>
+              <span className='form__span'>{formData.numOfColours}</span>
+            </div>
+            <div className='response__container'>
+              <h5 className='response__title'>Size</h5>
+              <span className='form__span'>
+                Length {formData.dimensionX} * Width {formData.dimensionY} *
+                Height {formData.dimensionZ} {formData.measurementScale}
+              </span>
+            </div>
+            <div className='response__container'>
+              <h5 className='response__title'>File name</h5>
+              <span className='form__span'>{formData.style}</span>
             </div>
             <div className='response__container'>
               <h5 className='response__title'>File name</h5>

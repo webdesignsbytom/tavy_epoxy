@@ -1,0 +1,10 @@
+.options__container {
+    background-color: red;
+    display: grid;
+    place-content: center;
+}
+
+.selection__container {
+    background-color: yellow;
+    border: 3px solid black;
+}

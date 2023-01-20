@@ -8,33 +8,37 @@
 }
 
 .gallery__title {
+  width: 100%;
   display: grid;
   justify-items: center;
   padding-bottom: 4rem;
   font-family: 'Kodchasan', sans-serif;
-  font-size: 2rem;
+  font-size: 2.8rem;
+  text-align: center;
 }
+
+/* Start of images */
 
 .gallery__main__container {
   display: grid;
-  height: auto;
-  width: 100%;
   justify-items: center;
+  border: 1px solid green;
 }
 
 .gallery__ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 2rem;
+  border: 1px solid red;
+  padding: 0 1rem;
 }
 
-.gallery__listItem {
-  height: fit-content;
-  padding: 1rem;
-}
 .gallery__listItem:hover {
-  scale: 1.8;
-  background-color: grey;
+  scale: 1.2;
+  transition: scale 400ms ease-in-out;
+  background-color: silver;
+  z-index: 1;
+  border-radius: 12px;
+  filter: brightness(1.2);
 }
 
 .gallery__ul {
@@ -47,14 +51,9 @@
   align-items: center;
 }
 
-.gallery__ul:nth-child(2) {
-  align-items: baseline;
-}
-
 .gallery__listItem {
   display: grid;
   width: 100%;
-  height: fit-content;
   padding: 0.2rem;
 }
 .gallery__item {
@@ -64,7 +63,7 @@
 .gallery__item img {
   width: 100%;
   object-fit: cover;
-  border: 3px solid black;
+  border: 3px solid silver;
 }
 
 .gallery__item p {
@@ -84,6 +83,7 @@
   position: relative;
 }
 
+/* Pin/screw effect on plaque */
 .pins__effect {
   display: grid;
   grid-template-areas:

@@ -1,0 +1,31 @@
+.register__page {
+    background-color: red;
+    height: 100vh;
+    width: 100vw;
+
+    display: grid;
+    place-content: center;
+}
+
+.register__form__container {
+    background-color: lightblue;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+.title__container {
+    background-color: yellow;
+text-align: center;
+}
+
+.register__form {
+    background-color: pink;
+    display: grid;
+}
+
+.register__form > * {
+    display: grid;
+    text-align: center;
+}

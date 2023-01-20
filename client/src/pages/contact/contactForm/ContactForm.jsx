@@ -15,7 +15,6 @@ function ContactForm() {
 
   const selectSetType = (event) => {
     const { id } = event.target;
-    console.log('xxx', event.target.className);
 
     if (id === 'table') {
       setTableSelected('selected__sq');

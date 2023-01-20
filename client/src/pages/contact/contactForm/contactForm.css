@@ -63,6 +63,7 @@
   padding: 2rem;
   grid-template-rows: auto auto auto;
   place-content: center;
+  gap: 0.5rem;
 }
 
 .upper__container {
@@ -74,6 +75,7 @@
 .contact__subtitle {
   max-width: 30ch;
 }
+
 .contact__form__actions {
   padding: 0.8rem;
   border-radius: 12px;
@@ -111,10 +113,14 @@
 .form__span {
   display: flex;
   align-items: center;
-  text-transform: capitalize;
 }
 
 .contact__heading__container {
+
+}
+
+.contact__title h2 {
+  font-size: 2.5rem;
 }
 
 .submit__btn {

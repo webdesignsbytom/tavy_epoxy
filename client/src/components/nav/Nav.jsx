@@ -14,12 +14,13 @@ function Nav() {
         </div>
 
         <div className='menu__container'>
-          <Link to='/gallery'>About</Link>
+          <Link to='/about'>About</Link>
           <Link to='/gallery'>Gallery</Link>
-          <Link to='/gallery'>Design</Link>
           <Link to='/contact'>Contact</Link>
-          <Link to='/gallery'>Login</Link>
-          <Link to='/gallery'>Register</Link>
+          <Link to='/design'>Design</Link>
+          <Link to='/login'>Login</Link>
+          <Link to='/register'>Register</Link>
+          <Link to='/account'>Account</Link>
         </div>
       </nav>
     </>

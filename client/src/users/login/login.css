@@ -6,7 +6,7 @@
   }
   
   .login__form__container {
-    background-color: lightblue;
+    background-image: url('../../assets/images/marble_background2.jpg');
     border: 1px solid black;
     border-radius: 1rem;
     font-family: 'Oswald', sans-serif;
@@ -19,7 +19,7 @@
   }
   
   .login__form {
-    background-color: pink;
+    background-color: white;
     display: grid;
     padding: 1rem;
     gap: 5px;

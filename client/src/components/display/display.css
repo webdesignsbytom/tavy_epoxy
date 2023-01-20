@@ -1,7 +1,7 @@
 .display__container {
   display: grid;
   padding: 1rem;
-  padding-top: 2rem;
+  padding-top: 6rem;
 }
 
 .main__display {
@@ -104,6 +104,14 @@
 
 
 /* Media Queries (MEDIUM DEVICES) */
+@media screen and (min-width: 1400px) {
+  .header__article {
+    font-size: 1.8rem;
+  }
+  .main__article {
+font-size: 1.5rem;
+  }
+}
 
 @media screen and (max-width: 1024px) {
   .header__article {

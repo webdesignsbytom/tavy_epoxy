@@ -4,7 +4,7 @@
   align-items: center;
   width: 100%;
   font-family: 'Oswald', sans-serif;
-padding-top: 3rem;
+  padding-top: 3rem;
 }
 
 .contact__form {
@@ -42,8 +42,7 @@ padding-top: 3rem;
   border-radius: 12px;
   padding: 0.8rem;
   background-color: rgb(69, 163, 221);
-    filter: brightness(1.2);
-
+  filter: brightness(1.2);
 }
 /* TODO: replace filter above with brighter colour */
 .form__container {
@@ -51,13 +50,13 @@ padding-top: 3rem;
   display: grid;
   border-radius: 12px;
   background-color: rgb(139, 176, 224);
+  padding: 1rem;
   grid-template-rows: 1fr auto auto;
 }
 
 .upper__container {
   display: grid;
   grid-template-columns: auto 1fr;
-  padding: 1rem;
   gap: 1rem;
 }
 
@@ -75,44 +74,35 @@ padding-top: 3rem;
   width: 100%;
   display: grid;
   grid-template-rows: repeat(5, 50px);
-  padding: 1rem;
 }
 
 .response__container {
-  background-color: orange;
   display: grid;
   grid-auto-flow: column;
   grid-template-columns: 100px 1fr;
 }
 
 .response__title {
-  background-color: pink;
   display: flex;
   align-items: center;
 }
 
-
-
 .form__span {
-  background-color: green;
   display: flex;
   align-items: center;
   text-transform: capitalize;
-
 }
 
 .contact__heading__container {
-
 }
 
 .submit__btn {
-  background-color: red;
   display: grid;
   place-content: center;
 }
 
 .btn__container {
-  background-color: green;
+  margin-top: 1rem;
   display: grid;
   place-content: center;
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Nav from '../../components/nav/Nav';
 import './register.css';
 
@@ -33,6 +34,10 @@ function Register() {
               <input type='submit' className='btn' value='Submit!' />
             </div>
           </form>
+
+          <div className='login__link'>
+            <Link to='/login'>Already a member? Login here!</Link>
+          </div>
         </div>
       </div>
     </>

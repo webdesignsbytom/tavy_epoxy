@@ -16,17 +16,17 @@
 .title__container {
   text-align: center;
   padding-bottom: 1rem;
+  font-size: 1.8rem;
 }
 
 .register__form {
   background-color: white;
   display: grid;
-  padding: 1rem;
+  padding: 2rem 4rem;
   gap: 5px;
   border: 1px solid black;
   border-radius: 12px;
-  font-size: 1.3rem;
-
+  font-size: 1.6rem;
 }
 
 .register__form > * {

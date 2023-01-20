@@ -25,12 +25,13 @@
   height: 175px;
   border-radius: 12px;
   padding: 0.8rem;
-  background-color: white;
+  background-color: rgb(139, 176, 224);
 }
 
 .table__sq:hover,
 .selected__sq:hover {
   filter: brightness(1.2);
+  scale: 1.05;
 }
 
 .selected__sq {
@@ -40,8 +41,10 @@
   border-radius: 12px;
   padding: 0.8rem;
   background-color: rgb(69, 163, 221);
-}
+    filter: brightness(1.2);
 
+}
+/* TODO: replace filter above with brighter colour */
 .form__container {
   width: 100%;
   display: grid;

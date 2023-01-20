@@ -22,16 +22,21 @@ function GalleryComponent() {
   return (
     <main className='gallery__page__container'>
       <div className='gallery__title'>
-        <h2>Gallery</h2>
+        <h2>GALLERY</h2>
       </div>
-      
+
       <div className='gallery__main__container'>
         <ul className='gallery__ul'>
-          
+          {/* list item */}
           <li className='gallery__listItem'>
+            {/* article */}
             <article className='gallery__item'>
-              <img src={WoodStyleTable} alt='Wooden striation effect' />
-              <p className='pins__effect'>
+              {/* image */}
+              <div className='image__container'>
+                <img src={WoodStyleTable} alt='Wooden striation effect' />
+              </div>
+              {/* pins */}
+              <div className='pins__effect'>
                 <div className='pin1'>
                   <div className='pin__container'></div>
                 </div>
@@ -39,8 +44,10 @@ function GalleryComponent() {
                   <div className='pin__container'></div>
                 </div>
                 <div className='image__text'>
-                  A basic coffee table made into a work of art! A tree striation
-                  effect with natural colours and a silver burst.
+                  <p>
+                    A basic coffee table made into a work of art! A tree
+                    striation effect with natural colours and a silver burst.
+                  </p>
                 </div>
 
                 <div className='pin3'>
@@ -49,7 +56,8 @@ function GalleryComponent() {
                 <div className='pin4'>
                   <div className='pin__container'></div>
                 </div>
-              </p>
+              </div>
+              {/* end of pins */}
             </article>
           </li>
 
@@ -377,8 +385,6 @@ function GalleryComponent() {
               </p>
             </article>
           </li>
-
-          
 
           <li className='gallery__listItem'>
             <article className='gallery__item'>

@@ -27,6 +27,7 @@
   text-align: center;
   background-color: rgb(139, 176, 224);
   border-radius: 12px;
+  font-family: 'Kodchasan', sans-serif;
 }
 
 .table__sq {
@@ -120,7 +121,8 @@
 }
 
 .contact__title h2 {
-  font-size: 2.5rem;
+  font-size: 3.2rem;
+  font-family: 'Kodchasan', sans-serif;
 }
 
 .submit__btn {
@@ -135,6 +137,7 @@
 }
 
 .btn__container button {
+  font-family: 'Kodchasan', sans-serif;
   padding: 0.6rem 1rem;
   width: 200px;
 }

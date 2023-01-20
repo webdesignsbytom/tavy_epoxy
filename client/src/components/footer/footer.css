@@ -1,0 +1,6 @@
+.footer__container {
+    min-height: 200px;
+    background-color: rgba(0, 0, 0, 0.426);
+    display: grid;
+    grid-auto-flow: column;
+}

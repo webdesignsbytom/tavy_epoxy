@@ -1,10 +1,65 @@
 .options__container {
-    background-color: red;
     display: grid;
     place-content: center;
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 5rem;
 }
 
 .selection__container {
-    background-color: yellow;
     border: 3px solid black;
+    width: 50vw;
+    border-radius: 4px;
+}
+
+.options__titles__container {
+    text-align: center;
+    font-size: 1.8rem;
+    padding-top: 1rem;
+}
+
+.options__subtitle {
+    font-size: 1.2rem;
+}
+.list__container ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    gap: 0.8rem;
+}
+
+.list__container a {
+    color: black;
+}
+
+.list__container li {
+    padding: 0.2rem;
+    padding-left: 0.5rem;
+    border-radius: 4px;
+    
+}
+
+.list__container li h6 {
+    font-size: 1rem;
+}
+
+.list__container li:hover {
+    scale: 1.1;
+}
+
+.white__option {
+    border: 2px solid black;
+    background-color: white;
+
+}
+
+.black__option {
+    background-color: black;
+}
+
+.black__option .data__container {
+    color: white;
+}
+
+.data__container span {
+    color: gold;
 }

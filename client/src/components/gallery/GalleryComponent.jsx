@@ -24,6 +24,7 @@ function GalleryComponent() {
       <div className='gallery__title'>
         <h2>Gallery</h2>
       </div>
+      
       <div className='gallery__main__container'>
         <ul className='gallery__ul'>
           

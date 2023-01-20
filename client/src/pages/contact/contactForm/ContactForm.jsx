@@ -96,7 +96,7 @@ function ContactForm() {
             </div>
 
             <div className='name__container'>
-              <label htmlFor='contactname'>contactname:</label>
+              <label htmlFor='contactname'>Contact Name:</label>
               <input
                 type='text'
                 name='contactname'
@@ -107,7 +107,7 @@ function ContactForm() {
             </div>
 
             <div className='colours__container'>
-              <label htmlFor='numOfColours'>numOfColours:</label>
+              <label htmlFor='numOfColours'>Number of colours:</label>
               <input
                 type='number'
                 name='numOfColours'
@@ -118,7 +118,7 @@ function ContactForm() {
             </div>
 
             <div className='material__container'>
-              <label htmlFor='material'>material:</label>
+              <label htmlFor='material'>Furniture material:</label>
               <select
                 name='material'
                 id='material-select'
@@ -134,8 +134,8 @@ function ContactForm() {
 
           <div className='response__data'>
             <div className='response__container'>
-              <h5>Type Of Set</h5>
-              <span>{formData.typeofset}</span>
+              <h5 className='response__title'>Type Of Set</h5>
+              <span className='form__span'>{formData.typeofset}</span>
             </div>
             <div className='response__container'>
             <h5>Size</h5>
@@ -146,7 +146,7 @@ function ContactForm() {
               <span>{formData.material}</span>
             </div>
             <div className='response__container'>
-            <h5>Name</h5>
+            <h5>Contact Name</h5>
               <span>{formData.name}</span>
               </div>
             <div className='response__container'>

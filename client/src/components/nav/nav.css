@@ -39,4 +39,8 @@ nav {
 .menu__container a:hover {
   scale: 1.2;
   color: black;
+  background-color: white;
+  /* margin: 0 0.5rem; */
+  padding: 0 0.5rem;
+  border-radius: 4px;
 }

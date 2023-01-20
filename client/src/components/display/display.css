@@ -1,6 +1,7 @@
 .display__container {
   display: grid;
   padding: 1rem;
+  padding-top: 2rem;
 }
 
 .main__display {
@@ -15,15 +16,16 @@
 }
 
 .header__article {
-  margin: 0.2rem 4rem;
+  margin: 0.2rem 4rem 0 4rem;
 
   display: grid;
   grid-area: article1;
 
   font-family: 'Oswald', sans-serif;
-  font-size: 2.2rem;
+  font-size: 2rem;
 
   min-width: 500px;
+  line-height: 1.1;
 }
 
 .main__article {
@@ -31,17 +33,19 @@
   grid-area: article2;
   width: 100%;
   grid-auto-flow: row;
-  padding: 3rem 4rem;
+  padding: 2rem 4rem 3rem 4rem;
   height: auto;
   font-family: 'Oswald', sans-serif;
   gap: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.3;
+
 }
 
 .cta__container {
   display: grid;
   grid-area: cta;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 /* IMAGE SLIDER  */
@@ -53,7 +57,7 @@
   min-width: 400px;
   border-radius: 20px;
   max-width: 700px;
-  max-height: 700px;
+  max-height: 450px;
   grid-template-rows: 1fr auto;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
 

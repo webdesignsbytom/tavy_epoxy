@@ -52,7 +52,6 @@ function ContactForm() {
     <div className='contact__container'>
       <main className='contact__form'>
         <div className='order__options'>
-
           <div
             className={tableSelected}
             value='table'
@@ -132,12 +131,28 @@ function ContactForm() {
               </select>
             </div>
           </form>
-          <div className='data'>
-            typeOfSet={formData.typeofset}
-            size={formData.size}
-            materials={formData.material}
-            name={formData.name}
-            email={formData.email}
+
+          <div className='response__data'>
+            <div className='response__container'>
+              <h5>Type Of Set</h5>
+              <span>{formData.typeofset}</span>
+            </div>
+            <div className='response__container'>
+            <h5>Size</h5>
+              <span>{formData.size}</span>
+              </div>
+            <div className='response__container'>
+              <h5>Material</h5>
+              <span>{formData.material}</span>
+            </div>
+            <div className='response__container'>
+            <h5>Name</h5>
+              <span>{formData.name}</span>
+              </div>
+            <div className='response__container'>
+              <h5>Email</h5>
+              <span>{formData.email}</span>
+            </div>
           </div>
         </div>
       </main>

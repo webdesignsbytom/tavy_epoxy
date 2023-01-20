@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { sliderOptions } from '../../utils/ImageLocations';
+import LegoCrop from '../../assets/images/lego_cropped.png';
+
 
 function ImageSlider() {
   const startingCategory = sliderOptions[0];
@@ -26,7 +28,13 @@ function ImageSlider() {
       </div>
 
       <div className='slider__control'>
-        <div className='slider__icon'></div>
+
+        <div className='slider__icon'>
+          <div className="hidden__box">
+            <img src={LegoCrop} alt="slider" />
+          </div>
+        </div>
+        
         <div className='slider__icon'></div>
         <div className='slider__icon'></div>
         <div className='slider__icon'></div>

@@ -10,7 +10,7 @@ import CTABar from '../ctaBar/CTABar';
 
 function Display() {
   return (
-    <div className='display__container'>
+    <div className='display__container' id='display__link'>
       
       <main className='main__display'>
         <ImageSlider />

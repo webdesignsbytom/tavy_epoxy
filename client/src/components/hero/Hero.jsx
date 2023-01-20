@@ -18,9 +18,9 @@ function Hero() {
         <div className='continue__btn__container'>
           <button className='continue__btn' id='continue__btn'>
             <a
-              href='#cta'
-              onClick={() => setClickedContinue('#cta')}
-              className={clickedContinue === '#cta' ? 'active' : ''}
+              href='#display__link'
+              onClick={() => setClickedContinue('#display__link')}
+              className={clickedContinue === '#display__link' ? 'active' : ''}
             >
               Continue
             </a>

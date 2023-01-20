@@ -1,5 +1,8 @@
 import './app.css';
 import { Routes, Route } from 'react-router-dom';
+import jwt_decode from 'jwt-decode';
+
+
 import Contact from './pages/contact/Contact';
 import Gallery from './pages/gallery/Gallery';
 import Home from './pages/home/Home';
@@ -11,6 +14,20 @@ import Design from './pages/design/Design';
 import About from './pages/about/About';
 
 function App() {
+  
+  const getLoggedInUserId = () => {
+    const loadedToken = localStorage.getItem('token');
+    console.log('loadedToken', loadedToken);
+    if (loadedToken === null || loadedToken === '') {
+      return null;
+    }
+    const decoded = jwt_decode(loadedToken);
+    console.log('decoded token', decoded);
+    console.log('userEmail decoded', decoded.email);
+    console.log('userId decoded', decoded.id);
+    return decoded.id;
+  };
+
   return (
     <>
       <Routes>

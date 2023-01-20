@@ -18,7 +18,6 @@ nav {
   display: grid;
   align-items: center;
   border: 2px solid black;
-
 }
 
 .menu__container {
@@ -27,7 +26,7 @@ nav {
   align-items: center;
   grid-auto-flow: column;
   gap: 4rem;
-  padding-right: 1rem;
+  padding-right: 3rem;
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
 }
@@ -38,6 +37,6 @@ nav {
 }
 
 .menu__container a:hover {
-background-color: black;
-scale: 1.2;
+  scale: 1.2;
+  color: black;
 }

@@ -6,7 +6,6 @@ function ImageSlider() {
   const displayImagesArray = sliderOptions;
 
   const [imagesArray, setImagesArray] = useState(displayImagesArray);
-  // const [currentImage, setCurrentImage] = useState(sliderOptions);
   const [indexNumber, setIndexNumber] = useState(0);
 
   useEffect(() => {

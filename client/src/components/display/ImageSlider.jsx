@@ -3,30 +3,35 @@ import { sliderOptions } from '../../utils/ImageLocations';
 import LegoCrop from '../../assets/images/lego_cropped.png';
 
 function ImageSlider() {
-  const startingCategory = sliderOptions[0];
+  const displayImagesArray = sliderOptions;
 
-  const [currentImage, setCurrentImage] = useState(sliderOptions);
+  const [imagesArray, setImagesArray] = useState(displayImagesArray);
+  // const [currentImage, setCurrentImage] = useState(sliderOptions);
   const [indexNumber, setIndexNumber] = useState(0);
 
   useEffect(() => {
-    console.log('effect');
-    const interval = setInterval(() => {
-      setIndexNumber((prev) => prev + 1);
-    }, 6000);
+    console.log('just effect');
+
+    if (indexNumber === 5) {
+      setIndexNumber(0)
+    }
+    const index = setInterval(() => {
+      setIndexNumber(prev => prev + 1)
+    }, 2000);
 
     return () => {
-      clearInterval(interval);
+      clearInterval(index);
     };
-  }, []);
+
+  }, [indexNumber]);
 
   return (
     <section className='slider__container'>
       <div className='current__image'>
-        <img src={currentImage[indexNumber]} alt='norther lights display' />
+        <img src={imagesArray[indexNumber]} alt='norther lights display' />
       </div>
 
       <div className='slider__control'>
-        
         <div>
           <div className='slider__icon'></div>
           <div className='hidden__box'>

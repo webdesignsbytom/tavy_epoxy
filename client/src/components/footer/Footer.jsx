@@ -7,12 +7,12 @@ function Footer() {
       <footer className='footer__container'>
         <div className='footer__data'>
           <div className='contact__information'>
-            <span> Contact info</span>
-            <span>Address Line 1</span>
-            <span>Address Line 2</span>
-            <span>Address Line 3</span>
-            <span>Contact number</span>
-            <span>Email Address</span>
+            <span>Located and made</span>
+            <span>Tanglewood</span>
+            <span>Brook Lane</span>
+            <span>Tavistock</span>
+            <span>08774734834</span>
+            <span>Tavyepoxy@gmail.com</span>
           </div>
           <div className='site__navigation'>
             <a href='#'>
@@ -46,7 +46,9 @@ function Footer() {
             </a>
           </div>
         </div>
-        <article className='rights__footer'>All rights reserved. Developed by Tom Brockington</article>
+        <article className='rights__footer'>
+          All rights reserved. Developed by Tom Brockington
+        </article>
       </footer>
     </>
   );

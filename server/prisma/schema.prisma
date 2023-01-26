@@ -22,9 +22,6 @@ model User {
   email     String   @unique
   password  String
   role      Role     @default(USER)
-  firstName String
-  lastName  String
-  designs   Design[]
 }
 
 model Design {
@@ -32,8 +29,6 @@ model Design {
   title      String
   dimensions Int[]
   colours    String[]
-  User       User      @relation(fields: [userId], references: [id])
-  userId     Int
   createdAt  DateTime  @default(now())
   updatedAt  DateTime? @updatedAt
 }

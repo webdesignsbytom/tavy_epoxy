@@ -1,14 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Nav from '../../components/nav/Nav';
+import { useNavigate } from 'react-router-dom';
 import './register.css';
 
-import { useNavigate } from 'react-router-dom';
 function Register() {
-  let navigate = useNavigate();
-  navigate('/login', {
-    replace: true,
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+    confirmPassword: '',
   });
+  let navigate = useNavigate();
+
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    console.log('submit');
+
+    if (formData.password !== formData.confirmPassword) {
+      alert('Passwords do not match');
+      return;
+    }
+
+    const { email, password } = formData;
+
+    const res = await fetch(`http://localhost:4000/register`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email,
+        password,
+      }),
+    });
+
+    const userResData = await res.json();
+    
+    navigate('/login', {
+      replace: true,
+    });
+  };
+
+  const handleChange = (event) => {
+    const { value, name } = event.target;
+    console.log('value', value);
+
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
   return (
     <>
       <Nav />
@@ -18,20 +61,25 @@ function Register() {
             <h2>REGISTER</h2>
           </div>
 
-          <form action='' className='register__form'>
+          <form onSubmit={handleSubmit} className='register__form'>
             <label htmlFor='email'>
               Email
-              <input type='email' name='email' />
+              <input type='email' name='email' onChange={handleChange} required />
             </label>
 
             <label htmlFor='password'>
               Password
-              <input type='password' name='password' />
+              <input type='password' name='password' onChange={handleChange} required />
             </label>
 
             <label htmlFor='confirmPassword'>
               Confirm Password
-              <input type='password' name='confirmPassword' />
+              <input
+                type='password'
+                name='confirmPassword'
+                onChange={handleChange}
+                required
+              />
             </label>
 
             <div className='submit__container'>

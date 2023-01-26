@@ -2,6 +2,9 @@ import React from 'react';
 import { useState } from 'react';
 import './contactForm.css';
 import { formDefaultData, classInitValues } from '../../../utils/FormData';
+import CoffeeTable from '../../../assets/images/pouf.png';
+import TableIcon from '../../../assets/images/table.png';
+import PaintBrush from '../../../assets/images/starry-night.png';
 
 function ContactForm() {
   const [formData, setFormData] = useState(formDefaultData);
@@ -63,7 +66,7 @@ function ContactForm() {
             id='table'
             onClick={(event) => selectSetType(event)}
           >
-            Table
+            <img className='table__class' src={CoffeeTable} alt='coffee table' />
           </div>
 
           <div
@@ -73,7 +76,7 @@ function ContactForm() {
             id='dining-set'
             onClick={(event) => selectSetType(event)}
           >
-            Dining Set
+            <img className='table__class' src={TableIcon} alt='coffee table' />
           </div>
           <div
             className={artSelected}
@@ -82,7 +85,7 @@ function ContactForm() {
             id='art'
             onClick={(event) => selectSetType(event)}
           >
-            ArtWork
+            <img className='table__class' src={PaintBrush} alt='coffee table' />
           </div>
         </div>
 
@@ -173,7 +176,11 @@ function ContactForm() {
                   onChange={handleChange}
                 />{' '}
                 <span>z</span>
-                <select name='measurementScale' id='measurementScale-select' onChange={handleChange}>
+                <select
+                  name='measurementScale'
+                  id='measurementScale-select'
+                  onChange={handleChange}
+                >
                   <option value='mm'>mm</option>
                   <option value='cm'>cm</option>
                   <option value='in'>in</option>

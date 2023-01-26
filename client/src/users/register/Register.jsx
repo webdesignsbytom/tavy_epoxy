@@ -3,13 +3,17 @@ import { Link } from 'react-router-dom';
 import Nav from '../../components/nav/Nav';
 import './register.css';
 
+import { useNavigate } from 'react-router-dom';
 function Register() {
+  let navigate = useNavigate();
+  navigate('/login', {
+    replace: true,
+  });
   return (
     <>
       <Nav />
       <div className='register__page'>
         <div className='register__form__container'>
-          
           <div className='title__container'>
             <h2>REGISTER</h2>
           </div>

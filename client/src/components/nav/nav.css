@@ -22,24 +22,23 @@ nav {
 
 .menu__container {
   display: grid;
+  gap: 2rem;
   justify-self: end;
   align-items: center;
   grid-auto-flow: column;
-  gap: 4rem;
-  padding-right: 3rem;
   text-transform: uppercase;
-  font-family: 'Kodchasan', sans-serif;}
+  font-family: 'Kodchasan', sans-serif;
+  padding-right: 1rem;
+}
 
 .menu__container > * {
-  /* padding: 1rem; */
   color: white;
+  padding: 0.2rem 0.5rem;
 }
 
 .menu__container a:hover {
   scale: 1.2;
   color: black;
   background-color: white;
-  /* margin: 0 0.5rem; */
-  padding: 0 0.5rem;
   border-radius: 4px;
 }

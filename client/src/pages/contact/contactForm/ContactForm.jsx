@@ -5,6 +5,7 @@ import { formDefaultData, classInitValues } from '../../../utils/FormData';
 import CoffeeTable from '../../../assets/images/pouf.png';
 import TableIcon from '../../../assets/images/table.png';
 import PaintBrush from '../../../assets/images/starry-night.png';
+import PantoneWheel from '../../../assets/images/pantone.png';
 
 function ContactForm() {
   const [formData, setFormData] = useState(formDefaultData);
@@ -90,6 +91,10 @@ function ContactForm() {
         </div>
 
         <div className='form__container'>
+        <div className="contact__icon">
+          <img className='pantone__icon' src={PantoneWheel} alt="Pantone Wheel" />
+        </div>
+
           <div className='upper__container'>
             <article className='contact__heading__container'>
               <div className='contact__title'>

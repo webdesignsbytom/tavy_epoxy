@@ -1,6 +1,6 @@
 .footer__container {
     min-height: 200px;
-    background-color: rgba(0, 0, 0, 0.426);
+    background-color: var(--nav-background-color);
     width: 100%;
     font-family: 'Oswald', sans-serif;
     display: grid;
@@ -15,7 +15,7 @@
     
 }
 .footer__data span {
-    color: white;
+    color: var(--alt-font-color);
 }
 .contact__information {
     /* background-color: yellow; */
@@ -32,7 +32,7 @@
 
 .rights__footer {
     padding: 1rem 1rem 0 1rem;
-    color: white;
+    color: var(--alt-font-color);
     text-align: center;
 }
 

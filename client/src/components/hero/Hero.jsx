@@ -22,7 +22,7 @@ function Hero() {
               onClick={() => setClickedContinue('#display__link')}
               className={clickedContinue === '#display__link' ? 'active' : ''}
             >
-              Continue
+              CONTINUE
             </a>
           </button>
         </div>

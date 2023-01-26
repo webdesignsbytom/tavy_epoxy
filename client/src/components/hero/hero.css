@@ -4,39 +4,37 @@
   min-height: 100vh;
   width: 100%;
   background-image: url('../../assets/images/black_marble.jpg');
-
   display: grid;
   place-content: center;
 }
 
 .hero__titles__container {
   text-align: center;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.426);
+  color: var(--alt-font-color);
+  background-color: var(--nav-background-color);
   padding: 2rem;
   margin-top: 1rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  border-radius: 12px;
 }
 
 .main__title {
   font-weight: 700;
   font-family: 'Seymour One', sans-serif;
-  font-size: 3.5rem;
+  font-size: 6rem;
 }
 
 .second__font {
-  /* font-family: 'Permanent Marker', cursive; */
-  /* font-family: 'Hachi Maru Pop', cursive; */
-  /* font-family: 'Rubik Vinyl', cursive; */
   font-family: 'Righteous', cursive;
 }
 
 .subtitle {
   font-weight: 400;
-  font-family: 'Kodchasan', sans-serif;}
+  font-family: 'Kodchasan', sans-serif;
+}
 
 .continue__btn__container {
-  background-color: white;
+  background-color: var(--main-background-color);
   position: absolute;
   bottom: 75px;
   width: 100%;
@@ -46,17 +44,14 @@
 
 .continue__btn {
   font-size: 2rem;
-  color: gold;
   background: none;
   border: none;
   padding: 0.2rem 1rem;
   font-family: 'Kodchasan', sans-serif;
-  text-transform: uppercase;
-  /* font-style: italic; */
 } 
 
 .continue__btn a {
-  color: gold;
+  color: var(--link-font-color);
 
 }
 

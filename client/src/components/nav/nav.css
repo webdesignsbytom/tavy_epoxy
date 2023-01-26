@@ -2,10 +2,10 @@ nav {
   display: grid;
   grid-template-columns: 75px 1fr;
 
-  background-color: rgba(0, 0, 0, 0.463);
+  background-color: var(--nav-background-color);
   width: 100%;
   position: fixed;
-  color: white;
+  color: var(--alt-font-color);
 }
 
 .logo__container {
@@ -17,7 +17,7 @@ nav {
   width: 3.4rem;
   display: grid;
   align-items: center;
-  border: 2px solid black;
+  border: 2px solid var(--main-border-color);
 }
 
 .menu__container {
@@ -32,13 +32,13 @@ nav {
 }
 
 .menu__container > * {
-  color: white;
+  color: var(--alt-font-color);
   padding: 0.2rem 0.5rem;
 }
 
 .menu__container a:hover {
   scale: 1.2;
-  color: black;
-  background-color: white;
+  color: var(--main-font-color);
+  background-color: var(--hover-background-color);
   border-radius: 4px;
 }

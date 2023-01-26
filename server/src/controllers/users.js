@@ -10,7 +10,7 @@ const {
   findUserByEmail,
   findUserById,
   createUser,
-  deleteUserById
+  deleteUserById,
 } = require('../domain/users');
 
 const getAllUsers = async (req, res) => {
@@ -74,7 +74,12 @@ const registerNewUser = async (req, res) => {
 
     const hashedPassword = await bcrypt.hash(password, hashRate);
 
-    const newUser = await createUser(lowerCaseEmail, hashedPassword, firstName, lastName);
+    const newUser = await createUser(
+      lowerCaseEmail,
+      hashedPassword,
+      firstName,
+      lastName
+    );
 
     return res.status(200).json({
       message: `User ${newUser.email} created`,
@@ -95,11 +100,9 @@ const registerNewUser = async (req, res) => {
 const deleteUser = async (req, res) => {
   console.log('deletiong user');
 
-  const userId = Number(req.params.id)
-  console.log('userId', userId);
+  const userId = Number(req.params.id);
 
   try {
-
     const foundUser = await findUserById(userId);
 
     if (!foundUser) {
@@ -110,7 +113,6 @@ const deleteUser = async (req, res) => {
     }
 
     const deletedUser = await deleteUserById(userId);
-    console.log('deletedUser', deletedUser);
 
     if (!deletedUser) {
       return res.status(404).json({
@@ -132,10 +134,10 @@ const deleteUser = async (req, res) => {
       message: `Internal server error: ${error.message}, code: 500`,
     });
   }
-}
+};
 
 module.exports = {
   getAllUsers,
   registerNewUser,
-  deleteUser
+  deleteUser,
 };

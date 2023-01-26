@@ -8,7 +8,9 @@ const hashRate = 8;
 const {
   findAllUsers,
   findUserByEmail,
+  findUserById,
   createUser,
+  deleteUserById
 } = require('../domain/users');
 
 const getAllUsers = async (req, res) => {
@@ -90,7 +92,50 @@ const registerNewUser = async (req, res) => {
   }
 };
 
+const deleteUser = async (req, res) => {
+  console.log('deletiong user');
+
+  const userId = Number(req.params.id)
+  console.log('userId', userId);
+
+  try {
+
+    const foundUser = await findUserById(userId);
+
+    if (!foundUser) {
+      return res.status(404).json({
+        message: `No user found with id: ${userId}`,
+        code: `404`,
+      });
+    }
+
+    const deletedUser = await deleteUserById(userId);
+    console.log('deletedUser', deletedUser);
+
+    if (!deletedUser) {
+      return res.status(404).json({
+        message: `Failed to delete: ${userId}`,
+        code: `400`,
+      });
+    }
+
+    return res.status(201).json({
+      message: `User ${deletedUser.email} deleted successfully`,
+      code: `200`,
+      data: deletedUser,
+    });
+  } catch (error) {
+    //
+    return res.status(500).json({
+      code: `500`,
+      error: error.message,
+      message: `Internal server error: ${error.message}, code: 500`,
+    });
+  }
+}
+
 module.exports = {
   getAllUsers,
   registerNewUser,
+  deleteUser
 };

@@ -18,7 +18,8 @@ app.use(express.urlencoded({ extended: true }));
 const userRouter = require('./routes/users')
 const authRouter = require('./routes/auth')
 
-app.use('/users', userRouter) // user data
+app.use('/user', userRouter) // user data
+app.use('/users', userRouter) // users data lists and search
 app.use('/', userRouter) // register
 app.use('/', authRouter)  // login 
 

@@ -15,8 +15,6 @@ function ContactForm() {
   const [selectedFile, setSelectedFile] = useState('No file selected');
   const [measurementSelected, setMeasurementSelected] = useState('mm');
 
-  console.log('selected file', selectedFile);
-
   const selectSetType = (event) => {
     const { id } = event.target;
 
@@ -60,40 +58,50 @@ function ContactForm() {
       <main className='contact__form'>
         <div className='order__options'>
           <div className='misc__title'>SELECT</div>
-          <div
-            className={tableSelected}
-            value='table'
-            name='table'
-            id='table'
-            onClick={(event) => selectSetType(event)}
-          >
-            <img className='table__class' src={CoffeeTable} alt='coffee table' />
+          <div className={tableSelected}>
+            <img
+              className='table__class'
+              src={CoffeeTable}
+              alt='coffee table'
+              value='table'
+              name='table'
+              id='table'
+              onClick={(event) => selectSetType(event)}
+            />
           </div>
 
-          <div
-            className={diningSetSelected}
-            value='dining-set'
-            name='dining-set'
-            id='dining-set'
-            onClick={(event) => selectSetType(event)}
-          >
-            <img className='table__class' src={TableIcon} alt='coffee table' />
+          <div className={diningSetSelected}>
+            <img
+              className='table__class'
+              value='dining-set'
+              name='dining-set'
+              id='dining-set'
+              onClick={(event) => selectSetType(event)}
+              src={TableIcon}
+              alt='coffee table'
+            />
           </div>
-          <div
-            className={artSelected}
-            value='art'
-            name='art'
-            id='art'
-            onClick={(event) => selectSetType(event)}
-          >
-            <img className='table__class' src={PaintBrush} alt='coffee table' />
+          <div className={artSelected}>
+            <img
+              className='table__class'
+              value='art'
+              name='art'
+              id='art'
+              onClick={(event) => selectSetType(event)}
+              src={PaintBrush}
+              alt='coffee table'
+            />
           </div>
         </div>
 
         <div className='form__container'>
-        <div className="contact__icon">
-          <img className='pantone__icon' src={PantoneWheel} alt="Pantone Wheel" />
-        </div>
+          <div className='contact__icon'>
+            <img
+              className='pantone__icon'
+              src={PantoneWheel}
+              alt='Pantone Wheel'
+            />
+          </div>
 
           <div className='upper__container'>
             <article className='contact__heading__container'>

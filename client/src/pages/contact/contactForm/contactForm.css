@@ -70,7 +70,9 @@
   gap: 0.5rem;
   position: relative;
 }
-
+.contact__title {
+  line-height: 0.9;
+}
 .contact__icon {
   position: absolute;
   bottom: 0;
@@ -90,6 +92,7 @@
 
 .contact__subtitle {
   max-width: 30ch;
+  line-height: 1.2;
 }
 
 .contact__form__actions {
@@ -133,6 +136,18 @@
 
 .contact__heading__container {
 
+}
+.form__grid__container {
+  display: grid;
+  grid-template-columns: 1.1fr 2fr;
+}
+
+.dimension__inputs {
+  display: grid;
+  grid-auto-flow: column;
+}
+.name__container {
+  justify-content: end;
 }
 
 .contact__title h2 {

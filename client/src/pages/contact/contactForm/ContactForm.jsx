@@ -95,14 +95,6 @@ function ContactForm() {
         </div>
 
         <div className='form__container'>
-          <div className='contact__icon'>
-            <img
-              className='pantone__icon'
-              src={PantoneWheel}
-              alt='Pantone Wheel'
-            />
-          </div>
-
           <div className='upper__container'>
             <article className='contact__heading__container'>
               <div className='contact__title'>
@@ -117,7 +109,7 @@ function ContactForm() {
             </article>
 
             <form onSubmit={handleSubmit} className='contact__form__actions'>
-              <div className='name__container'>
+              <div className='form__grid__container name__container'>
                 <label htmlFor='contactname'>Contact Name:</label>
                 <input
                   type='text'
@@ -126,10 +118,9 @@ function ContactForm() {
                   onChange={handleChange}
                   required
                 />{' '}
-                <span>Required</span>
               </div>
 
-              <div className='email__container'>
+              <div className='form__grid__container email__container'>
                 <label htmlFor='email'>Email:</label>
                 <input
                   type='email'
@@ -138,10 +129,9 @@ function ContactForm() {
                   onChange={handleChange}
                   required
                 />{' '}
-                <span>Required</span>
               </div>
 
-              <div className='material__container'>
+              <div className='form__grid__container material__container'>
                 <label htmlFor='material'>Furniture material:</label>
                 <select
                   name='material'
@@ -155,7 +145,7 @@ function ContactForm() {
                 </select>
               </div>
 
-              <div className='style__container'>
+              <div className='form__grid__container style__container'>
                 <label htmlFor='style'>Furniture style:</label>
                 <select name='style' id='style-select' onChange={handleChange}>
                   <option value=''>--Please choose an option--</option>
@@ -166,41 +156,43 @@ function ContactForm() {
                 </select>
               </div>
 
-              <div className='dimensions__container'>
+              <div className='form__grid__container dimensions__container'>
                 <label htmlFor='numOfColours'>Dimensions</label>
-                <input
-                  type='number'
-                  name='dimensionX'
-                  id='dimensionX'
-                  onChange={handleChange}
-                />{' '}
-                <span>x</span>
-                <input
-                  type='number'
-                  name='dimensionY'
-                  id='dimensionY'
-                  onChange={handleChange}
-                />{' '}
-                <span>y</span>
-                <input
-                  type='number'
-                  name='dimensionZ'
-                  id='dimensionZ'
-                  onChange={handleChange}
-                />{' '}
-                <span>z</span>
-                <select
-                  name='measurementScale'
-                  id='measurementScale-select'
-                  onChange={handleChange}
-                >
-                  <option value='mm'>mm</option>
-                  <option value='cm'>cm</option>
-                  <option value='in'>in</option>
-                </select>
+                <div className='dimension__inputs'>
+                  <input
+                    type='number'
+                    name='dimensionX'
+                    id='dimensionX'
+                    onChange={handleChange}
+                  />{' '}
+                  <span>x</span>
+                  <input
+                    type='number'
+                    name='dimensionY'
+                    id='dimensionY'
+                    onChange={handleChange}
+                  />{' '}
+                  <span>y</span>
+                  <input
+                    type='number'
+                    name='dimensionZ'
+                    id='dimensionZ'
+                    onChange={handleChange}
+                  />{' '}
+                  <span>z</span>
+                  <select
+                    name='measurementScale'
+                    id='measurementScale-select'
+                    onChange={handleChange}
+                  >
+                    <option value='mm'>mm</option>
+                    <option value='cm'>cm</option>
+                    <option value='in'>in</option>
+                  </select>
+                </div>
               </div>
 
-              <div className='colours__container'>
+              <div className='form__grid__container colours__container'>
                 <label htmlFor='numOfColours'>Number of colours:</label>
                 <input
                   type='number'
@@ -211,7 +203,7 @@ function ContactForm() {
                 />
               </div>
 
-              <div className='material__container'>
+              <div className='form__grid__container material__container'>
                 <label htmlFor='material'>Design Files:</label>
                 <input
                   type='file'

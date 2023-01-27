@@ -21,7 +21,7 @@
 .main__title {
   font-weight: 700;
   font-family: 'Seymour One', sans-serif;
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .second__font {
@@ -43,7 +43,7 @@
 }
 
 .continue__btn {
-  font-size: 2rem;
+  font-size: 1.6rem;
   background: none;
   border: none;
   padding: 0.2rem 1rem;

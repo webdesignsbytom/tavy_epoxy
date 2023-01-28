@@ -1,5 +1,6 @@
 import React from 'react';
 import './footer.css';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -15,35 +16,19 @@ function Footer() {
             <span>Tavyepoxy@gmail.com</span>
           </div>
           <div className='site__navigation'>
-            <a href='#'>
-              <span>Home</span>
-            </a>
-            <a href='/about'>
-              <span>About</span>
-            </a>
-            <a href='/gallery'>
-              <span>Gallery</span>
-            </a>
-            <a href='/gallery'>
-              <span>Contact</span>
-            </a>
-            <a href='/design'>
-              <span>Design</span>
-            </a>
-            <a href='/account'>
-              <span>Account</span>
-            </a>
+            <Link to='/'>Home</Link>
+            <Link to='/about'>About</Link>
+            <Link to='/gallery'>Gallery</Link>
+            <Link to='/contact'>Contact</Link>
+            <Link to='/design'>Design</Link>
+            <Link to='/account'>Account</Link>
           </div>
+
           <div className='social__media'>
-            <a href='#'>
-              <span>Twitter</span>
-            </a>
-            <a href='#'>
-              <span>Instagram</span>
-            </a>
-            <a href='#'>
-              <span>Tic-Tok</span>
-            </a>
+            <Link to='https://www.twitter.com'>Twitter</Link>
+            <Link to='www.facebook.com'>Facebook</Link>
+            <Link to='www.instagram.com'>Instagram</Link>
+            <Link to='www.tic-tok.com'>Tik-Tok</Link>
           </div>
         </div>
         <article className='rights__footer'>

@@ -51,11 +51,13 @@ function ContactForm() {
     });
   };
 
-  const handleSubmit = (event) => {};
-
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log('ji')
+  };
   return (
-    <div className='contact__container'>
-      <main className='contact__form'>
+    <div className='contact__page__container'>
+      <form className='contact__form' onSubmit={handleSubmit}>
         <div className='order__options'>
           <div className='misc__title'>SELECT</div>
           <div className={tableSelected}>
@@ -106,9 +108,13 @@ function ContactForm() {
                   can provide. Upload files with any designs you want to use
                 </p>
               </div>
+              <div className="textbox__container">
+                <label htmlFor="message">Message</label>
+                <textarea></textarea>
+              </div>
             </article>
 
-            <form onSubmit={handleSubmit} className='contact__form__actions'>
+            <div className='contact__form__actions'>
               <div className='form__grid__container name__container'>
                 <label htmlFor='contactname'>Contact Name:</label>
                 <input
@@ -204,14 +210,14 @@ function ContactForm() {
               </div>
 
               <div className='form__grid__container material__container'>
-                <label htmlFor='material'>Design Files:</label>
+                <label htmlFor='file'>Design Files:</label>
                 <input
                   type='file'
                   name='file'
                   onChange={(e) => setSelectedFile(e.target.files[0])}
                 />
               </div>
-            </form>
+            </div>
           </div>
 
           <div className='response__data'>
@@ -252,13 +258,13 @@ function ContactForm() {
             </div>
           </div>
 
-          <div className='submit__btn'>
-            <div className='btn__container'>
-              <button>SUBMIT</button>
+          <div className='submit__container'>
+            <div className='submit__btn'>
+              <input type='submit' value='Submit!' />
             </div>
           </div>
         </div>
-      </main>
+      </form>
     </div>
   );
 }

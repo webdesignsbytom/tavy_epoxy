@@ -4,35 +4,45 @@
     width: 100%;
     font-family: 'Oswald', sans-serif;
     display: grid;
-    padding: 1rem;
     text-align: center;
-
+    padding-top: 0.4rem;
 }
 
 .footer__data {
     display: grid;
-    grid-auto-flow: column;
-    
+grid-template-columns: 1fr 1fr 1fr;    
 }
+
 .footer__data span {
     color: var(--alt-font-color);
 }
+
 .contact__information {
-    /* background-color: yellow; */
-    display: grid;
-}
-.site__navigation {
-    /* background-color: yellow; */
-    display: grid;
-}
-.social__media {
-    /* background-color: yellow; */
     display: grid;
 }
 
-.rights__footer {
-    padding: 1rem 1rem 0 1rem;
+.site__navigation {
+    display: grid;
+}
+
+.site__navigation a {
     color: var(--alt-font-color);
+}
+
+.social__media {
+    display: grid;
+}
+
+.social__media a {
+    color: var(--alt-font-color);
+}
+
+.rights__footer {
+    color: var(--alt-font-color);
+    display: grid;
     text-align: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 0.6rem;
 }
 

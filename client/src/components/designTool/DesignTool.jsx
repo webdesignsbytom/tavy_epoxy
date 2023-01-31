@@ -66,7 +66,7 @@ function DesignTool() {
                 <option value='ash'>Ash</option>
               </select>
 
-              <label htmlFor='numOfColours'>Dimensions</label>
+              <label htmlFor='numOfColours'>Dimensions:</label>
               <div className='dimension__inputs'>
                 <input
                   type='number'
@@ -102,6 +102,11 @@ function DesignTool() {
                   <option value='in'>in</option>
                 </select>
               </div>
+            </div>
+
+            <div className="estimateContainer">
+              <div className="total__cost">£1000</div>
+              <div className="total__time">4 weeks</div>
             </div>
           </div>
         </div>

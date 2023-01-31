@@ -23,6 +23,9 @@ function GalleryComponent() {
     <main className='gallery__page__container'>
       <div className='gallery__title'>
         <h2>GALLERY</h2>
+        <div>
+          Follow me on T I
+        </div>
       </div>
 
       <div className='gallery__main__container'>

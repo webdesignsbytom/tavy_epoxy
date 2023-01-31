@@ -205,7 +205,6 @@ function ContactForm() {
                   name='numOfColours'
                   id='numOfColours'
                   onChange={handleChange}
-                  required
                 />
               </div>
 

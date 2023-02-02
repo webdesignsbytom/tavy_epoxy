@@ -67,7 +67,7 @@ function GalleryComponent() {
           <li className='gallery__listItem'>
             <article className='gallery__item'>
               <img src={BlueTable1} alt='Wooden striation effect' />
-              <p className='pins__effect'>
+              <div className='pins__effect'>
                 <div className='pin1'>
                   <div className='pin__container'></div>
                 </div>
@@ -85,7 +85,7 @@ function GalleryComponent() {
                 <div className='pin4'>
                   <div className='pin__container'></div>
                 </div>
-              </p>
+              </div>
             </article>
           </li>
 

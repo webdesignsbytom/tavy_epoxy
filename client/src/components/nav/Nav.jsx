@@ -9,6 +9,7 @@ import { useContext } from 'react';
 function Nav() {
   const { user, setUser } = useContext(UserContext);
   const navigate = useNavigate();
+  console.log('process.env.REACT_APP_USER_TOKEN', process.env.REACT_APP_USER_TOKEN);
 
   console.log('userId', user.id);
 

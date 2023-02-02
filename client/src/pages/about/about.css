@@ -1,0 +1,28 @@
+.about__page__container {
+  border: 5px solid green;
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  padding-top: 8rem;
+}
+
+.about__info__container {
+  border: 5px solid yellow;
+  width: 70vw;
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr;
+}
+
+.top__layer {
+  background-image: url('../../assets/images/bg1.jpg');
+  padding: 5rem;
+  background-size: 100%;
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bottom__layer {
+  display: grid;
+  border: 5px solid red;
+}

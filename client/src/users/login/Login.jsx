@@ -37,7 +37,6 @@ function Login() {
     console.log('login', login);
 
     localStorage.setItem(process.env.REACT_APP_USER_TOKEN, login.data);
-
     setUser(login.user)
 
     navigate('/account', {

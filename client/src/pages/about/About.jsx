@@ -1,19 +1,24 @@
-import React from 'react';
-import './about.css';
-import BG1 from '../../assets/images/bg1.jpg';
-import Nav from '../../components/nav/Nav';
+
+import React from 'react'
+import Nav from '../../components/nav/Nav'
+import Footer from '../../components/footer/Footer'
+import './about.css'
 
 function About() {
   return (
     <>
-      <Nav />
-      <section className='about__page__container'>
-        <div className='about__info__container'>
-          <div className='top__layer'></div>
-          <div className='bottom__layer'>
-          </div>
-        </div>
+
+    <Nav />
+    <div className='about__page__container'>
+      <section className='about__sections'>
+        <div className="left"></div>
+        <div className="middle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio temporibus, veritatis facilis eligendi obcaecati veniam cupiditate iste praesentium pariatur, quo assumenda sed quibusdam sunt numquam dolor amet! Accusamus, alias rem! Cupiditate laudantium, accusantium eligendi esse beatae harum similique, dicta natus nam soluta hic autem. Quae excepturi repellendus vero maiores eos?</div>
+        <div className="right"></div>
       </section>
+
+
+    </div>
+    <Footer />
     </>
   );
 }

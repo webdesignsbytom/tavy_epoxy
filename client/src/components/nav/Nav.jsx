@@ -1,9 +1,24 @@
 import React from 'react';
 import './nav.css';
 import Logo1 from '../../assets/images/logo1.jpg';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { UserContext } from '../../context/UserContext';
+
+import { useContext } from 'react';
 
 function Nav() {
+  const { user, setUser } = useContext(UserContext);
+  const navigate = useNavigate();
+
+  console.log('userId', user.id);
+
+  const signOut = (event) => {
+    event.preventDefault();
+    localStorage.setItem(process.env.REACT_APP_USER_TOKEN, '');
+    setUser({});
+    navigate('/', { replace: true });
+  };
+
   return (
     <>
       <nav>
@@ -18,9 +33,18 @@ function Nav() {
           <Link to='/gallery'>Gallery</Link>
           <Link to='/contact'>Contact</Link>
           <Link to='/design'>Design</Link>
-          <Link to='/login'>Login</Link>
-          <Link to='/register'>Register</Link>
-          <Link to='/account'>Account</Link>
+
+          {!user.id ? (
+            <>
+              <Link to='/login'>Login</Link>
+              <Link to='/register'>Register</Link>
+            </>
+          ) : (
+            <>
+              <Link to='/account'>Account</Link>
+              <Link onClick={signOut}>LogOut</Link>
+            </>
+          )}
         </div>
       </nav>
     </>

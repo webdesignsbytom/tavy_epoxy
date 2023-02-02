@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useState } from 'react';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import Nav from '../../components/nav/Nav';
+import { UserContext } from '../../context/UserContext';
 import './login.css';
 
 function Login() {
@@ -9,8 +10,12 @@ function Login() {
     email: '',
     password: '',
   });
+
   const [loggedInUser, setLoggedInUser] = useState({})
+
   let navigate = useNavigate();
+
+  const { user, setUser } = useContext(UserContext);
 
 
   const handleSubmit = async (event) => {
@@ -33,9 +38,9 @@ function Login() {
 
     localStorage.setItem(process.env.REACT_APP_USER_TOKEN, login.data);
 
-    setLoggedInUser(login.user)
+    setUser(login.user)
 
-    navigate('/', {
+    navigate('/account', {
       replace: true
     })
   };

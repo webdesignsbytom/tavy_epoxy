@@ -23,9 +23,7 @@ function GalleryComponent() {
     <main className='gallery__page__container'>
       <div className='gallery__title'>
         <h2>GALLERY</h2>
-        <div>
-          Follow me on T I
-        </div>
+        <div>Follow me on T I</div>
       </div>
 
       <div className='gallery__main__container'>
@@ -92,7 +90,7 @@ function GalleryComponent() {
           <li className='gallery__listItem'>
             <article className='gallery__item'>
               <img src={WoodInlays} alt='Wooden striation effect' />
-              <p className='pins__effect'>
+              <div className='pins__effect'>
                 <div className='pin1'>
                   <div className='pin__container'></div>
                 </div>
@@ -110,14 +108,14 @@ function GalleryComponent() {
                 <div className='pin4'>
                   <div className='pin__container'></div>
                 </div>
-              </p>
+              </div>
             </article>
           </li>
 
           <li className='gallery__listItem'>
             <article className='gallery__item'>
               <img src={OrangeTable1} alt='Wooden striation effect' />
-              <p className='pins__effect'>
+              <div className='pins__effect'>
                 <div className='pin1'>
                   <div className='pin__container'></div>
                 </div>
@@ -135,14 +133,14 @@ function GalleryComponent() {
                 <div className='pin4'>
                   <div className='pin__container'></div>
                 </div>
-              </p>
+              </div>
             </article>
           </li>
 
           <li className='gallery__listItem horizontal'>
             <article className='gallery__item'>
               <img src={ArtPiece} alt='Wooden striation effect' />
-              <p className='pins__effect'>
+              <div className='pins__effect'>
                 <div className='pin1'>
                   <div className='pin__container'></div>
                 </div>
@@ -160,14 +158,14 @@ function GalleryComponent() {
                 <div className='pin4'>
                   <div className='pin__container'></div>
                 </div>
-              </p>
+              </div>
             </article>
           </li>
 
           <li className='gallery__listItem'>
             <article className='gallery__item'>
               <img src={CounterTop} alt='Wooden striation effect' />
-              <p className='pins__effect'>
+              <div className='pins__effect'>
                 <div className='pin1'>
                   <div className='pin__container'></div>
                 </div>
@@ -185,14 +183,14 @@ function GalleryComponent() {
                 <div className='pin4'>
                   <div className='pin__container'></div>
                 </div>
-              </p>
+              </div>
             </article>
           </li>
 
           <li className='gallery__listItem'>
             <article className='gallery__item'>
               <img src={LegOptions} alt='Wooden striation effect' />
-              <p className='pins__effect'>
+              <div className='pins__effect'>
                 <div className='pin1'>
                   <div className='pin__container'></div>
                 </div>
@@ -210,14 +208,14 @@ function GalleryComponent() {
                 <div className='pin4'>
                   <div className='pin__container'></div>
                 </div>
-              </p>
+              </div>
             </article>
           </li>
 
           <li className='gallery__listItem'>
             <article className='gallery__item'>
               <img src={CoffeeTable1} alt='Wooden striation effect' />
-              <p className='pins__effect'>
+              <div className='pins__effect'>
                 <div className='pin1'>
                   <div className='pin__container'></div>
                 </div>
@@ -235,14 +233,14 @@ function GalleryComponent() {
                 <div className='pin4'>
                   <div className='pin__container'></div>
                 </div>
-              </p>
+              </div>
             </article>
           </li>
 
           <li className='gallery__listItem vertical'>
             <article className='gallery__item'>
               <img src={RedTable} alt='Wooden striation effect' />
-              <p className='pins__effect'>
+              <div className='pins__effect'>
                 <div className='pin1'>
                   <div className='pin__container'></div>
                 </div>
@@ -260,14 +258,14 @@ function GalleryComponent() {
                 <div className='pin4'>
                   <div className='pin__container'></div>
                 </div>
-              </p>
+              </div>
             </article>
           </li>
 
           <li className='gallery__listItem'>
             <article className='gallery__item'>
               <img src={NorthernLights} alt='Wooden striation effect' />
-              <p className='pins__effect'>
+              <div className='pins__effect'>
                 <div className='pin1'>
                   <div className='pin__container'></div>
                 </div>
@@ -285,14 +283,14 @@ function GalleryComponent() {
                 <div className='pin4'>
                   <div className='pin__container'></div>
                 </div>
-              </p>
+              </div>
             </article>
           </li>
 
           <li className='gallery__listItem'>
             <article className='gallery__item'>
               <img src={WoodenInlays2} alt='Wooden striation effect' />
-              <p className='pins__effect'>
+              <div className='pins__effect'>
                 <div className='pin1'>
                   <div className='pin__container'></div>
                 </div>
@@ -310,14 +308,14 @@ function GalleryComponent() {
                 <div className='pin4'>
                   <div className='pin__container'></div>
                 </div>
-              </p>
+              </div>
             </article>
           </li>
 
           <li className='gallery__listItem'>
             <article className='gallery__item'>
               <img src={BlueTable2} alt='Wooden striation effect' />
-              <p className='pins__effect'>
+              <div className='pins__effect'>
                 <div className='pin1'>
                   <div className='pin__container'></div>
                 </div>
@@ -335,14 +333,14 @@ function GalleryComponent() {
                 <div className='pin4'>
                   <div className='pin__container'></div>
                 </div>
-              </p>
+              </div>
             </article>
           </li>
 
           <li className='gallery__listItem'>
             <article className='gallery__item'>
               <img src={Stencil1} alt='Wooden striation effect' />
-              <p className='pins__effect'>
+              <div className='pins__effect'>
                 <div className='pin1'>
                   <div className='pin__container'></div>
                 </div>
@@ -360,14 +358,14 @@ function GalleryComponent() {
                 <div className='pin4'>
                   <div className='pin__container'></div>
                 </div>
-              </p>
+              </div>
             </article>
           </li>
 
           <li className='gallery__listItem'>
             <article className='gallery__item'>
               <img src={Stencil2} alt='Wooden striation effect' />
-              <p className='pins__effect'>
+              <div className='pins__effect'>
                 <div className='pin1'>
                   <div className='pin__container'></div>
                 </div>
@@ -385,14 +383,14 @@ function GalleryComponent() {
                 <div className='pin4'>
                   <div className='pin__container'></div>
                 </div>
-              </p>
+              </div>
             </article>
           </li>
 
           <li className='gallery__listItem'>
             <article className='gallery__item'>
               <img src={LegoCrop} alt='Wooden striation effect' />
-              <p className='pins__effect'>
+              <div className='pins__effect'>
                 <div className='pin1'>
                   <div className='pin__container'></div>
                 </div>
@@ -410,7 +408,7 @@ function GalleryComponent() {
                 <div className='pin4'>
                   <div className='pin__container'></div>
                 </div>
-              </p>
+              </div>
             </article>
           </li>
         </ul>

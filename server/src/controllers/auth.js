@@ -6,6 +6,7 @@ const jwt = require('jsonwebtoken');
 const { findUserByEmail } = require('../domain/users');
 
 const login = async (req, res) => {
+  
   console.log('logging in...');
   const { email, password } = req.body;
   console.log('req.body', req.body);

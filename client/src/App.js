@@ -10,9 +10,13 @@ import Register from './users/register/Register';
 import Account from './users/account/Account';
 import Design from './pages/design/Design';
 import About from './pages/about/About';
+import { UserContext } from './context/UserContext';
+import { useContext } from 'react';
 
 function App() {
-  
+  const { user, setUser } = useContext(UserContext);
+  console.log('userxxx', user);
+
   const getLoggedInUserId = () => {
     const loadedToken = localStorage.getItem('token');
     console.log('loadedToken', loadedToken);

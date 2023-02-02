@@ -1,24 +1,23 @@
-import React from 'react'
+import React from 'react';
 import { createContext, useContext, useEffect, useState } from 'react';
 import jwt_decode from 'jwt-decode';
-import { userSampleData } from '../utils/UserData'
+import { userSampleData } from '../utils/UserData';
 import LoggedInUser from '../utils/LoggedInUser';
-import {  } from '../api/Requests';
 
-export const UserContext = React.createContext()
+export const UserContext = React.createContext();
 
-const initUserState = userSampleData
+const initUserState = userSampleData;
 
 const UserContextProvider = ({ children }) => {
-  const [user, setUser] = useState(initUserState)  
-  console.log('CONTEXT USER', user); 
+  const [user, setUser] = useState(initUserState);
+  console.log('CONTEXT USER', user);
 
   useEffect(() => {
-    const decodedUserData = LoggedInUser()
+    const decodedUserData = LoggedInUser();
     console.log('decodedUserData', decodedUserData);
-    
+
     if (decodedUserData) {
-      const id = decodedUserData.id
+      const id = decodedUserData.id;
       console.log('id', id);
 
       fetch(`http://localhost:4000/user/${id}`)
@@ -30,14 +29,13 @@ const UserContextProvider = ({ children }) => {
           console.log('error', error);
         }, []);
     }
+  }, []);
 
-  }, [])
+  return (
+    <UserContext.Provider value={{ user, setUser }}>
+      {children}
+    </UserContext.Provider>
+  );
+};
 
-    return (
-        <UserContext.Provider value={{ user, setUser }}>
-          {children}
-        </UserContext.Provider> 
-      );
-}
-
-export default UserContextProvider
+export default UserContextProvider;

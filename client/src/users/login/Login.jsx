@@ -17,7 +17,6 @@ function Login() {
 
   const { user, setUser } = useContext(UserContext);
 
-
   const handleSubmit = async (event) => {
     event.preventDefault();
     console.log('submit');
@@ -33,10 +32,12 @@ function Login() {
         password,
       }),
     });
+
     const login = await res.json();
     console.log('login', login);
 
     localStorage.setItem(process.env.REACT_APP_USER_TOKEN, login.data);
+
     setUser(login.user)
 
     navigate('/account', {

@@ -8,6 +8,28 @@ nav {
   color: var(--alt-font-color);
 }
 
+.phone__container,
+.burgerIcon__container {
+  display: none;
+}
+.closeBtn__container {
+  display: grid;
+  width: 100%;
+}
+.closeBtn__container button {
+  width: 25px;
+  height: 25px;
+}
+
+.phone__menu {
+  background-color: pink;
+  display: grid;
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+}
+
 .logo__container {
   display: grid;
   padding: 0.4rem;
@@ -42,4 +64,25 @@ nav {
   color: var(--main-font-color);
   background-color: var(--hover-background-color);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 800px) {
+  .menu__container {
+    display: none;
+  }
+  .phone__container {
+    display: grid;
+    justify-content: end;
+    align-items: center;
+  }
+  .burgerIcon__container {
+    display: block;
+    font-size: 3rem;
+    padding-right: 1rem;
+    cursor: pointer;
+  }
+  .burgerIcon__container:hover {
+    filter: brightness(0.8);
+    scale: 1.1;
+  }
 }

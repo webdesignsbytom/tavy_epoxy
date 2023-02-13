@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './nav.css';
 import Logo1 from '../../assets/images/logo1.jpg';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
@@ -8,8 +8,12 @@ import { useContext } from 'react';
 
 function Nav() {
   const { user, setUser } = useContext(UserContext);
+  const [toggleMenuOpen, setToggleMenuOpen] = useState(false);
   const navigate = useNavigate();
-  console.log('process.env.REACT_APP_USER_TOKEN', process.env.REACT_APP_USER_TOKEN);
+  console.log(
+    'process.env.REACT_APP_USER_TOKEN',
+    process.env.REACT_APP_USER_TOKEN
+  );
 
   console.log('userId', user.id);
 
@@ -18,6 +22,15 @@ function Nav() {
     localStorage.setItem(process.env.REACT_APP_USER_TOKEN, '');
     setUser({});
     navigate('/', { replace: true });
+  };
+
+  const openMenu = (event) => {
+    setToggleMenuOpen(true);
+    console.log('AAAAAA');
+  };
+  const closeMenu = (event) => {
+    setToggleMenuOpen(false);
+    console.log('BBBBBB');
   };
 
   return (
@@ -47,7 +60,26 @@ function Nav() {
             </>
           )}
         </div>
+
+        <div className='phone__container'>
+          <div className='burgerIcon__container' onClick={openMenu}>
+            &#9776;
+          </div>
+        </div>
       </nav>
+      {toggleMenuOpen && (
+        <div className='phone__menu'>
+          <div className='closeBtn__container'>
+            <button onClick={closeMenu}>Close</button>
+          </div>
+          <div className='nav__option home'>home</div>
+          <div className='nav__option about'>about</div>
+          <div className='nav__option gallery'>gallery</div>
+          <div className='nav__option contact'>contact</div>
+          <div className='nav__option design'>design</div>
+          <div className='nav__option login'>login</div>
+        </div>
+      )}
     </>
   );
 }

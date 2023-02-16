@@ -1,17 +1,13 @@
 import React from 'react';
 import './display.css';
-
-import Legs from '../../assets/images/leg_options.jpg';
-import Ex41 from '../../assets/images/4x.png';
-import NorthernLights from '../../assets/images/northern_lights_crop.png';
-
+// Image Slider
 import ImageSlider from './ImageSlider';
+// Buttons
 import CTABar from '../ctaBar/CTABar';
 
 function Display() {
   return (
-    <div className='display__container' id='display__link'>
-      
+    <section className='container display__container' id='display__link'>
       <main className='main__display'>
         <ImageSlider />
 
@@ -57,7 +53,7 @@ function Display() {
         </article>
         <CTABar />
       </main>
-    </div>
+    </section>
   );
 }
 

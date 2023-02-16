@@ -1,7 +1,5 @@
-
 .hero__container {
   height: 100vh;
-  min-height: 100vh;
   width: 100%;
   background-image: url('../../assets/images/black_marble.jpg');
   display: grid;
@@ -60,5 +58,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  
+  .main__title {
+    font-size: 3rem;
+  }
 }

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Options() {
   return (
     <>
-      <section className='options__container'>
+      <section className='container options__container'>
 
         <div className='selection__container'>
             

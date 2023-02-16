@@ -1,48 +1,44 @@
 .footer__container {
-    min-height: 200px;
-    background-color: var(--nav-background-color);
-    width: 100%;
-    font-family: 'Oswald', sans-serif;
-    display: grid;
-    text-align: center;
-    padding-top: 0.4rem;
+  background-color: var(--nav-background-color);
+  font-family: 'Oswald', sans-serif;
+  display: grid;
+  text-align: center;
+  padding-top: 0.6rem;
+  margin-top: 3rem;
 }
 
 .footer__data {
-    display: grid;
-grid-template-columns: 1fr 1fr 1fr;    
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer__data span {
-    color: var(--alt-font-color);
+  color: var(--alt-font-color);
 }
 
-.contact__information {
-    display: grid;
-}
-
+.contact__information,
 .site__navigation {
-    display: grid;
+  display: grid;
 }
 
 .site__navigation a {
-    color: var(--alt-font-color);
+  color: var(--alt-font-color);
 }
 
 .social__media {
-    display: grid;
+  display: grid;
 }
 
 .social__media a {
-    color: var(--alt-font-color);
+  color: var(--alt-font-color);
 }
 
 .rights__footer {
-    color: var(--alt-font-color);
-    display: grid;
-    text-align: center;
-    align-items: center;
-    font-weight: 400;
-    font-size: 0.6rem;
+  color: var(--alt-font-color);
+  display: grid;
+  text-align: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 0.6rem;
+  padding-top: 1.2rem;
 }
-

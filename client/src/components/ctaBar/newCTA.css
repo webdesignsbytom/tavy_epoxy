@@ -1,12 +1,11 @@
-/* .cta__container {
-    width: 100%;
+.cta__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    gap: 4px;
 }
 
 .button__container {
     display: grid;
-    place-content: center;
+    justify-content: center;
 }
 
 .cta__button {
@@ -45,4 +44,4 @@
 .gallery__button:hover {
     background-image: url('../../assets/images/black_marble.jpg');
     scale: 1.1;
-} */
+}

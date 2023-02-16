@@ -12,16 +12,15 @@ function ImageSlider() {
     console.log('just effect');
 
     if (indexNumber === 5) {
-      setIndexNumber(0)
+      setIndexNumber(0);
     }
     const index = setInterval(() => {
-      setIndexNumber(prev => prev + 1)
+      setIndexNumber((prev) => prev + 1);
     }, 2000);
 
     return () => {
       clearInterval(index);
     };
-
   }, [indexNumber]);
 
   return (
@@ -31,13 +30,7 @@ function ImageSlider() {
       </div>
 
       <div className='slider__control'>
-        <div>
-          <div className='slider__icon'></div>
-          <div className='hidden__box'>
-            <img src={LegoCrop} alt='slider' />
-          </div>
-        </div>
-
+        <div className='slider__icon'></div>
         <div className='slider__icon'></div>
         <div className='slider__icon'></div>
         <div className='slider__icon'></div>

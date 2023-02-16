@@ -46,4 +46,6 @@ html {
 body {
   line-height: 1.2;
   max-width: 100vw;
+  background: lightcoral;
+  overflow: hidden;
 }

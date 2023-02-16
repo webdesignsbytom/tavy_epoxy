@@ -1,0 +1,6 @@
+/* Presets */
+section.container {
+    width: 92%;
+    background: green;
+    margin: 0 auto;
+}

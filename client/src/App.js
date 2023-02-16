@@ -12,6 +12,7 @@ import Design from './pages/design/Design';
 import About from './pages/about/About';
 import { UserContext } from './context/UserContext';
 import { useContext } from 'react';
+import NewHome from './pages/home/NewHome';
 
 function App() {
   const { user, setUser } = useContext(UserContext);
@@ -33,7 +34,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<NewHome />} />
         <Route path='/about' element={<About />} />
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/contact' element={<Contact />} />

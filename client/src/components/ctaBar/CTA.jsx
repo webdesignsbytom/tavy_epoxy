@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import './newCTA.css'
+import './cta.css'
 
 function NewCTA() {
   return (

@@ -5,6 +5,8 @@
   text-align: center;
   padding-top: 0.6rem;
   margin-top: 3rem;
+  display: grid;
+  justify-content: center;
 }
 
 .footer__data {
@@ -41,4 +43,18 @@
   font-weight: 400;
   font-size: 0.6rem;
   padding-top: 1.2rem;
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 600px) {
+  .footer__container {
+    padding: 0.5rem;
+
+  }
+  .contact__information, .site__navigation ul li, .social__media ul li {
+    font-size: 0.8rem;
+    text-align: center;
+  } 
 }

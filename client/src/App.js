@@ -1,22 +1,20 @@
 import { Routes, Route } from 'react-router-dom';
+import { UserContext } from './context/UserContext';
+import { useContext } from 'react';
 import jwt_decode from 'jwt-decode';
-
+// Pages and Components
 import Contact from './pages/contact/Contact';
 import Gallery from './pages/gallery/Gallery';
-import Home from './pages/home/Home';
 import TestPage from './pages/testPage/TestPage';
 import Login from './users/login/Login';
 import Register from './users/register/Register';
 import Account from './users/account/Account';
 import Design from './pages/design/Design';
 import About from './pages/about/About';
-import { UserContext } from './context/UserContext';
-import { useContext } from 'react';
-import NewHome from './pages/home/NewHome';
+import Home from './pages/home/Home';
 
 function App() {
   const { user, setUser } = useContext(UserContext);
-  console.log('userxxx', user);
 
   const getLoggedInUserId = () => {
     const loadedToken = localStorage.getItem('token');
@@ -34,7 +32,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<NewHome />} />
+        <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/contact' element={<Contact />} />

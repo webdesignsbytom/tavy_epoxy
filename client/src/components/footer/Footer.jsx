@@ -59,7 +59,7 @@ function Footer() {
         </div>
         
         <article className='rights__footer'>
-          All rights reserved © Developed by Tom Brockington www.webdesignbytom.com
+          All rights reserved © Developed by Tom Brockington www.webdesignsbytom.com
         </article>
       </footer>
     </>

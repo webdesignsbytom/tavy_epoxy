@@ -5,7 +5,7 @@ import './newCTA.css'
 
 function NewCTA() {
   return (
-    <section className='container cta__container' id='cta'>
+    <section className='cta__container' id='cta'>
       <div className='button__container'>
         <Link to='/contact'>
           <button className='enquire__button cta__button'>Enquire</button>

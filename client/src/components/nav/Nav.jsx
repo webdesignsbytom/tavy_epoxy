@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
-import './nav.css';
-import Logo1 from '../../assets/images/logo1.jpg';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import React, { useState, useContext } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { UserContext } from '../../context/UserContext';
-
-import { useContext } from 'react';
+// Images and style
+import Logo1 from '../../assets/images/logo1.jpg';
+import './nav.css';
+import { ToggleContext } from '../../context/ToggleContext';
 
 function Nav() {
   const { user, setUser } = useContext(UserContext);
-  const [toggleMenuOpen, setToggleMenuOpen] = useState(false);
+  const { togglePhoneNav, setTogglePhoneNav } = useContext(ToggleContext);
+
   const navigate = useNavigate();
   console.log(
     'process.env.REACT_APP_USER_TOKEN',
@@ -25,12 +26,11 @@ function Nav() {
   };
 
   const openMenu = (event) => {
-    setToggleMenuOpen(true);
-    console.log('AAAAAA');
+    setTogglePhoneNav(true);
   };
+  
   const closeMenu = (event) => {
-    setToggleMenuOpen(false);
-    console.log('BBBBBB');
+    setTogglePhoneNav(false);
   };
 
   return (
@@ -67,19 +67,6 @@ function Nav() {
           </div>
         </div>
       </nav>
-      {toggleMenuOpen && (
-        <div className='phone__menu'>
-          <div className='closeBtn__container'>
-            <button onClick={closeMenu}>Close</button>
-          </div>
-          <div className='nav__option home'>home</div>
-          <div className='nav__option about'>about</div>
-          <div className='nav__option gallery'>gallery</div>
-          <div className='nav__option contact'>contact</div>
-          <div className='nav__option design'>design</div>
-          <div className='nav__option login'>login</div>
-        </div>
-      )}
     </>
   );
 }

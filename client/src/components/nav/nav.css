@@ -12,22 +12,47 @@ nav {
 .burgerIcon__container {
   display: none;
 }
+
 .closeBtn__container {
   display: grid;
   width: 100%;
+  justify-content: end;
+  align-items: center;
+  padding-right: 2rem;
+  font-size: 2rem;
 }
+
 .closeBtn__container button {
   width: 25px;
   height: 25px;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .phone__menu {
-  background-color: pink;
+  background-color: black;
   display: grid;
   position: absolute;
   z-index: 2;
   width: 100vw;
   height: 100vh;
+}
+
+.phone__menu a {
+  color: white;
+}
+
+.nav__option {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.nav__option:hover {
+  filter: brightness(1.1);
+  color: slategray;
 }
 
 .logo__container {

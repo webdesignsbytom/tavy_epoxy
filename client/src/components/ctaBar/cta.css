@@ -2,11 +2,11 @@
     margin-top: 2rem;
     display: grid;
     gap: 4px;
+    grid-template-columns: 1fr 1fr;
 }
 
 .button__container {
-    display: grid;
-    justify-content: center;
+    display: grid;    
 }
 
 .cta__button {

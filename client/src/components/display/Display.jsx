@@ -1,9 +1,9 @@
 import React from 'react';
-import NewCTA from '../ctaBar/CTA';
+import CTA from '../ctaBar/CTA';
 import ImageSlider from './ImageSlider';
 import './display.css';
 
-function NewDisplay() {
+function Display() {
   return (
     <>
       <section id='display__container' className='container'>
@@ -44,11 +44,13 @@ function NewDisplay() {
             hand crafted feel and a completly unique style.
           </p>
         </article>
+
         <ImageSlider />
-        <NewCTA />
+
+        <CTA />
       </section>
     </>
   );
 }
 
-export default NewDisplay;
+export default Display;

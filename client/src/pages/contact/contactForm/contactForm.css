@@ -155,8 +155,6 @@ input[tpye='file'] {
   font-family: 'Kodchasan', sans-serif;
 }
 
-.btn__container {
-}
 input[type='submit'] {
   padding: 0.5rem;
   border-radius: 8px;
@@ -167,12 +165,54 @@ input[type='submit'] {
   padding: 0.6rem 1rem;
   width: 200px;
 }
-/* Media Queries (MEDIUM DEVICES)
 
-@media screen and (max-width: 824px) {
-    .contact__form {
-        width: 95%;
-      
-     
-      }
-} */
+@media screen and (max-width: 1200px) {
+  .main__title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact__form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    width: 100%;
+    padding: 0.4rem;
+    margin-top: 5rem;
+  }
+
+  .upper__container {
+    display: grid;
+    grid-auto-flow: row;
+  }
+
+  .order__options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .misc__title {
+    display: none;
+  }
+
+  .upper__container {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+
+  .response__data {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+
+  .form__grid__container {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+
+  .table__sq {
+    width: auto;
+    height: auto;
+  }
+}

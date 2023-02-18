@@ -1,11 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
-import './contactForm.css';
 import { formDefaultData, classInitValues } from '../../../utils/FormData';
+// Icons
 import CoffeeTable from '../../../assets/images/pouf.png';
 import TableIcon from '../../../assets/images/table.png';
 import PaintBrush from '../../../assets/images/starry-night.png';
-import PantoneWheel from '../../../assets/images/pantone.png';
+// Styles
+import './contactForm.css';
 
 function ContactForm() {
   const [formData, setFormData] = useState(formDefaultData);

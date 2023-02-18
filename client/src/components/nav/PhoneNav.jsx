@@ -17,22 +17,22 @@ function PhoneNav() {
             <button onClick={closeMenu}>X</button>
           </div>
           <div className='nav__option home'>
-            <Link to='/'>home</Link>
+            <Link to='/' onClick={closeMenu}>home</Link>
           </div>
           <div className='nav__option about'>
-            <Link to='/about'>about</Link>
+            <Link to='/about' onClick={closeMenu}>about</Link>
           </div>
           <div className='nav__option gallery'>
-            <Link to='/gallery'>gallery</Link>
+            <Link to='/gallery' onClick={closeMenu}>gallery</Link>
           </div>
           <div className='nav__option contact'>
-            <Link to='/contact'>contact</Link>
+            <Link to='/contact' onClick={closeMenu}>contact</Link>
           </div>
           <div className='nav__option design'>
-            <Link to='/design'>design</Link>
+            <Link to='/design' onClick={closeMenu}>design</Link>
           </div>
           <div className='nav__option login'>
-            <Link to='/login'>login</Link>
+            <Link to='/login' onClick={closeMenu}>login</Link>
           </div>
         </div>
   )

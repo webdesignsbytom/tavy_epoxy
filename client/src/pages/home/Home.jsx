@@ -7,10 +7,11 @@ import Options from '../../components/options/Options';
 import Footer from '../../components/footer/Footer';
 import NewDisplay from '../../components/display/Display';
 import PhoneNav from '../../components/nav/PhoneNav';
+// Styles
 import './home.css';
 
-function NewHome() {
-  const { togglePhoneNav, setTogglePhoneNav } = useContext(ToggleContext);
+function Home() {
+  const { togglePhoneNav } = useContext(ToggleContext);
 
   return (
     <>
@@ -29,4 +30,4 @@ function NewHome() {
   );
 }
 
-export default NewHome;
+export default Home;

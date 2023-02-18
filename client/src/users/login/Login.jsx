@@ -1,17 +1,24 @@
 import React, { useContext } from 'react';
 import { useState } from 'react';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
-import Nav from '../../components/nav/Nav';
+// Context
+import { ToggleContext } from '../../context/ToggleContext';
 import { UserContext } from '../../context/UserContext';
+// Components
+import Nav from '../../components/nav/Nav';
+// Styles
 import './login.css';
+import PhoneNav from '../../components/nav/PhoneNav';
 
 function Login() {
+  const { togglePhoneNav } = useContext(ToggleContext);
+
   const [loginUserData, setLoginUserData] = useState({
     email: '',
     password: '',
   });
 
-  const [loggedInUser, setLoggedInUser] = useState({})
+  const [loggedInUser, setLoggedInUser] = useState({});
 
   let navigate = useNavigate();
 
@@ -38,11 +45,11 @@ function Login() {
 
     localStorage.setItem(process.env.REACT_APP_USER_TOKEN, login.data);
 
-    setUser(login.user)
+    setUser(login.user);
 
     navigate('/account', {
-      replace: true
-    })
+      replace: true,
+    });
   };
 
   const handleChange = (event) => {
@@ -56,44 +63,50 @@ function Login() {
   };
   return (
     <>
-      <Nav />
-      <div className='login__page'>
-        <div className='login__form__container'>
-          <div className='title__container'>
-            <h2>LOGIN</h2>
-          </div>
+      {togglePhoneNav ? (
+        <PhoneNav />
+      ) : (
+        <>
+          <Nav />
+          <div className='login__page'>
+            <div className='login__form__container'>
+              <div className='title__container'>
+                <h2>LOGIN</h2>
+              </div>
 
-          <form onSubmit={handleSubmit} className='login__form'>
-            <label htmlFor='email'>
-              Email
-              <input
-                type='email'
-                name='email'
-                onChange={handleChange}
-                required
-              />
-            </label>
+              <form onSubmit={handleSubmit} className='login__form'>
+                <label htmlFor='email'>
+                  Email
+                  <input
+                    type='email'
+                    name='email'
+                    onChange={handleChange}
+                    required
+                  />
+                </label>
 
-            <label htmlFor='password'>
-              Password
-              <input
-                type='password'
-                name='password'
-                onChange={handleChange}
-                required
-              />
-            </label>
+                <label htmlFor='password'>
+                  Password
+                  <input
+                    type='password'
+                    name='password'
+                    onChange={handleChange}
+                    required
+                  />
+                </label>
 
-            <div className='submit__container'>
-              <input type='submit' className='btn' value='Submit!' />
+                <div className='submit__container'>
+                  <input type='submit' className='btn' value='Submit!' />
+                </div>
+              </form>
+
+              <div className='register__link'>
+                <Link to='/register'>Not a member? Register Now</Link>
+              </div>
             </div>
-          </form>
-
-          <div className='register__link'>
-            <Link to='/register'>Not a member? Register Now</Link>
           </div>
-        </div>
-      </div>
+        </>
+      )}
     </>
   );
 }

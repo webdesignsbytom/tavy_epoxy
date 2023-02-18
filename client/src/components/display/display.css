@@ -136,6 +136,6 @@
   .slider__container {
     display: grid;
     grid-area: slider;
-    width: auto;
+    width: 100%;
   }
 }

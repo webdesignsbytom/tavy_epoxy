@@ -1,48 +1,57 @@
 .cta__container {
-    margin-top: 2rem;
-    display: grid;
-    gap: 4px;
-    grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
+  display: flex;
+  gap: 4px;
 }
 
 .button__container {
-    display: grid;    
+  display: grid;
 }
 
 .cta__button {
-    width: 250px;
-    padding: 0.5rem;
-    border-radius: 22px;
-    font-size: 2rem;
-    font-weight: bold;
-    color: white;
-    cursor: pointer;
-    font-family: 'Kodchasan', sans-serif;
+  width: 250px;
+  padding: 0.5rem;
+  border-radius: 22px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  font-family: 'Kodchasan', sans-serif;
 }
 
 .cta__button {
-    color: black;
-    transition: all 0.4s ease-out;
+  color: black;
+  transition: all 0.4s ease-out;
 }
 
 .enquire__button {
-    background-color: white;
-    color: black;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+  background-color: white;
+  color: black;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
 }
 
 .enquire__button:hover {
-    background-image: url('../../assets/images/marble_background2.jpg');
-    scale: 1.1;
+  background-image: url('../../assets/images/marble_background2.jpg');
+  scale: 1.1;
 }
 
 .gallery__button {
-    background-color: black;
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+  background-color: black;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
 }
 
 .gallery__button:hover {
-    background-image: url('../../assets/images/black_marble.jpg');
-    scale: 1.1;
+  background-image: url('../../assets/images/black_marble.jpg');
+  scale: 1.1;
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 600px) {
+    .cta__container {
+        display: grid;
+        justify-content: center;
+      }
 }

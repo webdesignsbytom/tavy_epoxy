@@ -16,63 +16,78 @@ import LegoCrop from '../assets/images/lego_cropped.png';
 
 export const GalleryData = [
     {
+        title: 'This Title Is',
         image: RedTable,
         desc: 'A rush of red colours. It would look dug out the ground if it wasnt for the unique and unnatural colour of the stone effect.'
     },
     {
+        title: 'This Title Is',
         image: NorthernLights,
         desc: 'Emulating the beautiful natural Northern lights in the sky. This piece was a custom order and is so unique and pretty.'
     },
     {
+        title: 'This Title Is',
         image: WoodStyleTable,
         desc: 'A basic coffee table made into a work of art! A tree striation effect with natural colours and a silver burst.'
     },
     {
+        title: 'This Title Is',
         image: CounterTop,
         desc: 'My kitchen counters and some sample boards'
     },
     {
+        title: 'This Title Is',
         image: BlueTable1,
-        desc: 'lorem20'
+        desc: 'A basic coffee table made into a work of art! A tree striation effect with natural colours and a silver burst.'
     },
     {
+        title: 'This Title Is',
         image: OrangeTable1,
-        desc: 'lorem20'
+        desc: 'A basic coffee table made into a work of art! A tree striation effect with natural colours and a silver burst.'
     },
     {
+        title: 'This Title Is',
         image: ArtPiece,
-        desc: 'lorem20'
+        desc: 'A basic coffee table made into a work of art! A tree striation effect with natural colours and a silver burst.'
     },
     {
+        title: 'This Title Is',
         image: WoodInlays,
-        desc: 'lorem20'
+        desc: 'A basic coffee table made into a work of art! A tree striation effect with natural colours and a silver burst.'
     },
     {
+        title: 'This Title Is',
         image: LegOptions,
-        desc: 'lorem20'
+        desc: 'A basic coffee table made into a work of art! A tree striation effect with natural colours and a silver burst.'
     },
     {
+        title: 'This Title Is',
         image: CoffeeTable1,
-        desc: 'lorem20'
+        desc: 'A basic coffee table made into a work of art! A tree striation effect with natural colours and a silver burst.'
     },
     {
+        title: 'This Title Is',
         image: WoodenInlays2,
-        desc: 'lorem20'
+        desc: 'A basic coffee table made into a work of art! A tree striation effect with natural colours and a silver burst.'
     },
     {
+        title: 'This Title Is',
         image: Stencil1,
-        desc: 'lorem20'
+        desc: 'A basic coffee table made into a work of art! A tree striation effect with natural colours and a silver burst.'
     },
     {
+        title: 'This Title Is',
         image: Stencil2,
-        desc: 'lorem20'
+        desc: 'A basic coffee table made into a work of art! A tree striation effect with natural colours and a silver burst.'
     },
     {
+        title: 'This Title Is',
         image: BlueTable2,
-        desc: 'lorem20'
+        desc: 'A basic coffee table made into a work of art! A tree striation effect with natural colours and a silver burst.'
     },
     {
+        title: 'This Title Is',
         image: LegoCrop,
-        desc: 'lorem20'
+        desc: 'A basic coffee table made into a work of art! A tree striation effect with natural colours and a silver burst.'
     },
 ]

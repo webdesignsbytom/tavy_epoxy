@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from '../../components/nav/Nav';
+import Footer from '../../components/footer/Footer';
 import GalleryComponent from '../../components/gallery/GalleryComponent';
 
 function Gallery() {
@@ -7,6 +8,7 @@ function Gallery() {
     <>
       <Nav />
       <GalleryComponent />
+      <Footer />
     </>
   );
 }

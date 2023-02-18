@@ -12,6 +12,7 @@ import Account from './users/account/Account';
 import Design from './pages/design/Design';
 import About from './pages/about/About';
 import Home from './pages/home/Home';
+import GalleryItem from './pages/gallery/GalleryItem';
 
 function App() {
   const { user, setUser } = useContext(UserContext);
@@ -35,6 +36,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/gallery' element={<Gallery />} />
+        <Route path='/gallery-item' element={<GalleryItem />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/design' element={<Design />} />
         <Route path='/login' element={<Login />} />

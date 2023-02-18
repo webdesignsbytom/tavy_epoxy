@@ -167,12 +167,10 @@ input[type='submit'] {
 }
 
 @media screen and (max-width: 1200px) {
-  .main__title {
-    font-size: 3rem;
-  }
+
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .contact__form {
     display: grid;
     grid-template-columns: 1fr;

@@ -111,7 +111,7 @@ function ContactForm() {
               </div>
               <div className="textbox__container">
                 <label htmlFor="message">Message</label>
-                <textarea></textarea>
+                <textarea rows={8}></textarea>
               </div>
             </article>
 

@@ -1,9 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { UserContext } from './context/UserContext';
-// Context
-import { useContext } from 'react';
-import jwt_decode from 'jwt-decode';
-// Pages and Components
+// Pages
 import Contact from './pages/contact/Contact';
 import Gallery from './pages/gallery/Gallery';
 import TestPage from './pages/testPage/TestPage';
@@ -14,22 +10,9 @@ import Design from './pages/design/Design';
 import About from './pages/about/About';
 import HomePage from './pages/home/HomePage';
 import GalleryItem from './pages/gallery/GalleryItem';
+import Error404 from './pages/error/Error404';
 
 function App() {
-  const { user, setUser } = useContext(UserContext);
-
-  const getLoggedInUserId = () => {
-    const loadedToken = localStorage.getItem('token');
-    console.log('loadedToken', loadedToken);
-    if (loadedToken === null || loadedToken === '') {
-      return null;
-    }
-    const decoded = jwt_decode(loadedToken);
-    console.log('decoded token', decoded);
-    console.log('userEmail decoded', decoded.email);
-    console.log('userId decoded', decoded.id);
-    return decoded.id;
-  };
 
   return (
     <>
@@ -45,6 +28,7 @@ function App() {
         <Route path='/account' element={<Account />} />
         
         <Route path='/test' element={<TestPage />} />
+        <Route path='*' element={<Error404 />} />
       </Routes>
     </>
   );

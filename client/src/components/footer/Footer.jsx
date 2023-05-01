@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <>
-      <footer className=''>
+      <footer className='bg-gray-800 h-full grid'>
         <div className=''>
           <div className=''>
             <span>Located and made</span>

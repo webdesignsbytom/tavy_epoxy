@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { sliderOptions } from '../../utils/ImageLocations';
-import LegoCrop from '../../assets/images/lego_cropped.png';
 
 function ImageSlider() {
   const displayImagesArray = sliderOptions;
@@ -24,17 +23,21 @@ function ImageSlider() {
   }, [indexNumber]);
 
   return (
-    <section className='slider__container'>
-      <div className='current__image'>
-        <img src={imagesArray[indexNumber]} alt='norther lights display' />
-      </div>
+    <section className='grid outline outline-2 outline-black rounded-xl p-4 h-full'>
+      <div className='grid grid-rows-rev'>
+        <div className='grid outline outline-2 outline-black rounded-xl p-4 h-full bg-gray-100'>
+          {/* <img className='object-cover ' src={imagesArray[indexNumber]} alt='norther lights display' /> */}
+        </div>
 
-      <div className='slider__control'>
-        <div className='slider__icon'></div>
-        <div className='slider__icon'></div>
-        <div className='slider__icon'></div>
-        <div className='slider__icon'></div>
-        <div className='slider__icon'></div>
+        <section className='grid w-full justify-center items-center h-full'>
+          <div className='grid grid-cols-5 gap-6 '>
+            <div className='w-6 h-6 rounded-full bg-black'></div>
+            <div className='w-6 h-6 rounded-full bg-black'></div>
+            <div className='w-6 h-6 rounded-full bg-black'></div>
+            <div className='w-6 h-6 rounded-full bg-black'></div>
+            <div className='w-6 h-6 rounded-full bg-black'></div>
+          </div>
+        </section>
       </div>
     </section>
   );

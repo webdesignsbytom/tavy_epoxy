@@ -1,7 +1,6 @@
 import React from 'react';
-// Images
-import TreeBG from '../../assets/img/trees.jpeg';
-import Navbar from '../../components/navigation/Navbar';
+// Components
+import Navbar from '../../components/nav/Navbar';
 
 function Error404() {
   return (
@@ -23,7 +22,6 @@ function Error404() {
             </section>
           </section>
           <section className='flex lg:justify-end lg:mr-20'>
-            <img src={TreeBG} alt='lost cat' />
           </section>
         </main>
       </div>

@@ -1,24 +1,21 @@
-import React, { useContext } from 'react';
-// Context
-import { ToggleContext } from '../../context/ToggleContext';
+import React from 'react';
 // Components
 import HeroSection from '../../components/hero/HeroSection';
 import Options from '../../components/options/Options';
 import Footer from '../../components/footer/Footer';
 import Navbar from '../../components/nav/Navbar';
-import NewDisplay from '../../components/display/Display';
+import MainDisplay from '../../components/display/MainDisplay';
 
 function HomePage() {
-  const { toggleNavbar, toggleNavigation } = useContext(ToggleContext);
 
   return (
-    <div className='grid min-h-screen grid-rows-2'>
-      <section className='relative grid'>
+    <div className='grid min-h-screen'>
+      <section className='relative h-screen grid'>
         <Navbar />
         <HeroSection />
       </section>
       <section className='grid h-screen'>
-        <NewDisplay />
+        <MainDisplay />
       </section>
       <section className='grid h-screen'>
         <Options />

@@ -16,7 +16,7 @@ function Navbar() {
 
   return (
     <>
-      <header className='relative grid text-gray-100 h-fit px-2 py-3 md:p-6 items-center'>
+      <header className='relative grid text-gray-100 h-fit px-2 pt-3 md:px-6 items-center'>
         <div className='grid grid-flow-col justify-between bg-transparent-black w-full items-center py-4 px-3 md:px-6 rounded-2xl'>
           <section className=''>
             <Link to='/'>
@@ -123,7 +123,9 @@ function Navbar() {
               <li
                 onClick={toggleNavbar}
                 className={
-                  activeNav === '/' ? 'px-2 py-4 text-center text-yellow-300' : 'px-2 py-4 text-center'
+                  activeNav === '/'
+                    ? 'px-2 py-4 text-center text-yellow-300'
+                    : 'px-2 py-4 text-center'
                 }
               >
                 <Link to='/'>

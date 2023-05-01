@@ -1,13 +1,12 @@
 import React from 'react';
-import './footer.css';
 import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
     <>
-      <footer className='footer__container'>
-        <div className='footer__data'>
-          <div className='contact__information'>
+      <footer className=''>
+        <div className=''>
+          <div className=''>
             <span>Located and made</span>
             <span>Tanglewood</span>
             <span>Brook Lane</span>
@@ -16,7 +15,7 @@ function Footer() {
             <span>Tavyepoxy@gmail.com</span>
           </div>
 
-          <div className='site__navigation'>
+          <div className=''>
             <ul>
               <li>
                 <Link to='/'>Home</Link>
@@ -39,7 +38,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div className='social__media'>
+          <div className=''>
             <ul>
               <li>
                 <a href='https://www.twitter.com'>Twitter</a>
@@ -58,7 +57,7 @@ function Footer() {
           </div>
         </div>
         
-        <article className='rights__footer'>
+        <article className=''>
           All rights reserved © Developed by Tom Brockington www.webdesignsbytom.com
         </article>
       </footer>

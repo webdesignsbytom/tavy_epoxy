@@ -1,17 +1,16 @@
 import React, { useContext } from 'react';
 import { useState } from 'react';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 // Context
 import { ToggleContext } from '../../context/ToggleContext';
 import { UserContext } from '../../context/UserContext';
 // Components
-import Nav from '../../components/nav/Nav';
 // Styles
 import './login.css';
-import PhoneNav from '../../components/nav/PhoneNav';
+import Navbar from '../../components/nav/Navbar';
 
 function Login() {
-  const { togglePhoneNav } = useContext(ToggleContext);
+  const { toggleNavbar, toggleNavigation } = useContext(ToggleContext);
 
   const [loginUserData, setLoginUserData] = useState({
     email: '',
@@ -62,52 +61,46 @@ function Login() {
     });
   };
   return (
-    <>
-      {togglePhoneNav ? (
-        <PhoneNav />
-      ) : (
-        <>
-          <Nav />
-          <div className='login__page'>
-            <div className='login__form__container'>
-              <div className='title__container'>
-                <h2>LOGIN</h2>
-              </div>
-
-              <form onSubmit={handleSubmit} className='login__form'>
-                <label htmlFor='email'>
-                  Email
-                  <input
-                    type='email'
-                    name='email'
-                    onChange={handleChange}
-                    required
-                  />
-                </label>
-
-                <label htmlFor='password'>
-                  Password
-                  <input
-                    type='password'
-                    name='password'
-                    onChange={handleChange}
-                    required
-                  />
-                </label>
-
-                <div className='submit__container'>
-                  <input type='submit' className='btn' value='Submit!' />
-                </div>
-              </form>
-
-              <div className='register__link'>
-                <Link to='/register'>Not a member? Register Now</Link>
-              </div>
-            </div>
+    <div>
+      <Navbar />
+      <div className='login__page'>
+        <div className='login__form__container'>
+          <div className='title__container'>
+            <h2>LOGIN</h2>
           </div>
-        </>
-      )}
-    </>
+
+          <form onSubmit={handleSubmit} className='login__form'>
+            <label htmlFor='email'>
+              Email
+              <input
+                type='email'
+                name='email'
+                onChange={handleChange}
+                required
+              />
+            </label>
+
+            <label htmlFor='password'>
+              Password
+              <input
+                type='password'
+                name='password'
+                onChange={handleChange}
+                required
+              />
+            </label>
+
+            <div className='submit__container'>
+              <input type='submit' className='btn' value='Submit!' />
+            </div>
+          </form>
+
+          <div className='register__link'>
+            <Link to='/register'>Not a member? Register Now</Link>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 

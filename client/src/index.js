@@ -6,7 +6,6 @@ import { BrowserRouter } from 'react-router-dom';
 import UserContextProvider from './context/UserContext';
 import ToggleContextProvider from './context/ToggleContext';
 // Styles
-import './index.css';
 import './styles/index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

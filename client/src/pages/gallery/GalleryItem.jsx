@@ -3,9 +3,9 @@ import { useLocation, useNavigate } from 'react-router-dom';
 // Data
 import { GalleryData } from '../../utils/GalleryData';
 // Components
-import Nav from '../../components/nav/Nav';
 // Style
 import './galleryItem.css'
+import Navbar from '../../components/nav/Navbar';
 
 function GalleryItem() {
   const navigate = useNavigate();
@@ -23,9 +23,9 @@ function GalleryItem() {
   }, []);
 
   return (
-    <>
+   
       <div className='galleryItem__page__container'>
-        <Nav />
+        <Navbar />
         <section className='item__container'>
           <article className='item__description'>
 
@@ -41,7 +41,7 @@ function GalleryItem() {
           </div>
         </section>
       </div>
-    </>
+
   );
 }
 

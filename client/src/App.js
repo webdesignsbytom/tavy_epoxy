@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import { UserContext } from './context/UserContext';
+// Context
 import { useContext } from 'react';
 import jwt_decode from 'jwt-decode';
 // Pages and Components
@@ -11,7 +12,7 @@ import Register from './users/register/Register';
 import Account from './users/account/Account';
 import Design from './pages/design/Design';
 import About from './pages/about/About';
-import Home from './pages/home/Home';
+import HomePage from './pages/home/HomePage';
 import GalleryItem from './pages/gallery/GalleryItem';
 
 function App() {
@@ -33,7 +34,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' index element={<HomePage />} />
         <Route path='/about' element={<About />} />
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/gallery-item' element={<GalleryItem />} />

@@ -1,13 +1,12 @@
 import React from 'react';
 import CTA from '../ctaBar/CTA';
 import ImageSlider from './ImageSlider';
-import './display.css';
 
 function Display() {
   return (
     <>
-      <section id='display__container' className='container'>
-        <article className='header__article'>
+      <section id='' className=''>
+        <article className=''>
           <p>
             <span>Tav-e-poxy</span> designs and builds unique furniture and
             beautiful artworks using resin styling. At affordable prices and
@@ -15,7 +14,7 @@ function Display() {
             timber.
           </p>
         </article>
-        <article className='main__article'>
+        <article className=''>
           <p>
             You can help make your home unique with a quality piece of hand-made
             furniture or wall art hanging. Epoxy has a beautiful glass smooth

@@ -6,24 +6,24 @@ import { Link } from 'react-router-dom';
 function Options() {
   return (
     <>
-      <section className='container options__container'>
+      <section className=''>
 
-        <div className='selection__container'>
+        <div className=''>
             
-          <div className='options__titles__container'>
-            <div className='options__title'>
+          <div className=''>
+            <div className=''>
               <h3>OPTIONS</h3>
             </div>
-            <div className='options__subtitle'>
+            <div className=''>
               <p>We have a fully custom product</p>
             </div>
           </div>
 
-          <div className='list__container'>
+          <div className=''>
             <ul>
-              <li className='white__option'>
+              <li className=''>
                 <Link to='/'>
-                    <div className='data__container'>
+                    <div className=''>
                         <h6>Materials</h6>
                         <p>Soft, hard, colour, grain</p>
                         <span>Click to see more</span>
@@ -31,9 +31,9 @@ function Options() {
                 </Link>
               </li>
 
-              <li className='white__option'>
+              <li className=''>
                 <Link to='/'>
-                    <div className='data__container'>
+                    <div className=''>
                         <h6>Colours</h6>
                         <p>Metallic, solid, transparent</p>
                         <span>Click to see more</span>
@@ -41,9 +41,9 @@ function Options() {
                 </Link>
               </li>
 
-              <li className='white__option'>
+              <li className=''>
                 <Link to='/'>
-                    <div className='data__container'>
+                    <div className=''>
                         <h6>Shape</h6>
                         <p>Custom shapes, dimensions, patterns or stencils</p>
                         <span>Click to see more</span>
@@ -51,9 +51,9 @@ function Options() {
                 </Link>
               </li>
 
-              <li className='black__option'>
+              <li className=''>
                 <Link to='/design'>
-                    <div className='data__container'>
+                    <div className=''>
                         <h6>Design Now</h6>
                         <p>Use the design tools to create</p>
                         <span>Click to see more</span>

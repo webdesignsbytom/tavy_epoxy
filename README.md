@@ -1,5 +1,6 @@
 # Tav-e-poxy
 
+<<<<<<< HEAD
 CURRENTLY BEING UPDATED TO TAILWIND STYLE SHEETS
 
 TavyEpoxy is a Devon based furniture and art based business, creating unique handmade furniture with custom artistic epoxy finishes
@@ -37,3 +38,17 @@ Backend: Express, Prisma, JavaScript
 2. Navigate to client and server files and run
 3. `npm install`
 4. `npm start`
+=======
+TavyEpoxy is a Devon based furniture and art based business, creating unique handmade furniture with custom artistic epoxy finishes
+
+The site needs to look smart and artistic for a higer end client who enjoys custom furniture
+
+Current address `https://strong-tulumba-d852ca.netlify.app/`
+
+[Temp Frontend](https://strong-tulumba-d852ca.netlify.app/)
+
+## Table of contents
+
+- [TAV-E-POXY](#tav-e-poxy)
+  - [Table of contents](#table-of-contents)
+>>>>>>> 428f41298850981e19b723da267c54d6952520cc

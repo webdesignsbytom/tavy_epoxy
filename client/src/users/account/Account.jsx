@@ -1,12 +1,13 @@
 import React from 'react'
-import Nav from '../../components/nav/Nav'
+// Components
+import Navbar from '../../components/nav/Navbar'
 
 function Account() {
   return (
-    <>
-    <Nav />
+    <div>
+    <Navbar />
     <div>Account</div>
-    </>
+    </div>
   )
 }
 

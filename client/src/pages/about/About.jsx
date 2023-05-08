@@ -1,20 +1,17 @@
 import React, { useContext } from 'react';
+// Context
 import { ToggleContext } from '../../context/ToggleContext';
-import Nav from '../../components/nav/Nav';
+// Components
 import Footer from '../../components/footer/Footer';
 import './about.css';
-import PhoneNav from '../../components/nav/PhoneNav';
+import Navbar from '../../components/nav/Navbar';
 
 function About() {
   const { togglePhoneNav } = useContext(ToggleContext);
 
   return (
-    <>
-      {togglePhoneNav ? (
-        <PhoneNav />
-      ) : (
-        <>
-          <Nav />
+    <div>
+          <Navbar />
           <div className='about__page__container'>
             <section className='about__sections'>
               <div className='left'></div>
@@ -31,9 +28,8 @@ function About() {
             </section>
           </div>
           <Footer />
-        </>
-      )}
-    </>
+   
+    </div>
   );
 }
 
